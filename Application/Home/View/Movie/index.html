@@ -1,0 +1,147 @@
+<include file="Public/header"/>
+<!-- page special css plugin here -->
+<link href="__PUBLIC__/Home/css/foucs.css" rel="stylesheet" />
+<script src="__PUBLIC__/Home/js/foucs.js" type="text/javascript"></script>
+<link href="__PUBLIC__/Home/css/ys.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--nav start-->
+<include file="Public/nav"/>
+<!--nav end-->
+<!-- focues start -->
+<div class="mod_focus_show" id="divimgplay">
+  <ul class="mod_focus_pic" id="divimginfog_imgPlayer">
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/b01.jpg" alt="" width="1120" height="400" /></a></li>
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/b02.jpg" alt="" width="1120" height="400" /></a></li>
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/b03.jpg" alt="" width="1120" height="400" /></a></li>
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/b04.jpg" alt="" width="1120" height="400" /></a></li>
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/b05.jpg" alt="" width="1120" height="400" /></a></li>
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/b06.jpg" alt="" width="1120" height="400" /></a></li>
+  </ul>
+  <ul class="mod_focus_title" id="ptitleg_imgPlayer">
+    <li class="current">
+      <h3><a href="javascript:;" target="_blank"></a></h3>
+      <p></p>
+    </li>
+  </ul>
+  <div class="focus_switch"><a href="javascript:;" class="icon_prev"></a><a href="javascript:;" class="icon_next"></a></div>
+  <ul class="mod_focus_list" id="divpageinfog_imgPlayer">
+    <li class="current"><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/small01.jpg" alt="第1张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/small02.jpg" alt="第2张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/small03.jpg" alt="第3张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/small04.jpg" alt="第4张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/small05.jpg" alt="第5张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
+    <li><a href="javascript:;" target="_blank"> <img src="__PUBLIC__/Home/images/small06.jpg" alt="第6张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
+  </ul>
+</div>
+<script type="text/javascript">
+        foucsbox(2500);
+</script> 
+<!-- focus end -->
+<div class="all">
+<div class="all_1">
+<div class="all_1l">
+      <div class="all_1l_1">
+      	<div class="all_1l_11">
+        <a href="{:U('Movie/lists', array('cid' => 4))}">MORE+</a><strong>微电影大赛展播</strong><span>MICRO FFFILM CONTEST</span>
+        </div>
+      <div class="all_1l_12">
+      	<ul>
+      		<foreach name="micro" item="v">
+	        	<li>
+	            	<a href="{:U('Movie/play', ['id' => $v['id']])}"><img src="__ROOT__/{$v.face196}" width="196" height="110" /></a> 
+	            	<p>{$v.name|mb_substr=###, 0, 15, 'UTF-8'}...</p>
+	            </li>
+             </foreach>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      </div>   <div class="all_1l_1">
+      	<div class="all_1l_11">
+        <a href="{:U('Movie/lists', array('cid' => 5))}">MORE+</a><strong>多彩贵州作品</strong><span>COLORFUL GUIZHOU WORKS</span>
+        </div>
+      <div class="all_1l_12">
+      	<ul>
+        	<foreach name="colorful" item="v">
+	        	<li>
+	            	<a href="{:U('Movie/play', ['id' => $v['id']])}"><img src="__ROOT__/{$v.face196}" width="196" height="110" /></a>
+	            	<p>{$v.name|mb_substr=###, 0, 15, 'UTF-8'}...</p>
+	            </li>
+             </foreach>
+        </ul>
+      
+      
+      </div>
+      <div class="clear"></div>
+       </div>   <div class="all_1l_1">
+      	<div class="all_1l_11">
+        <a href="{:U('Movie/lists', array('cid' => 6))}">MORE+</a><strong>原创草根</strong><span>THE ORIGINAL ROOT </span>
+        </div>
+      <div class="all_1l_12">
+      	<ul>
+        	<foreach name="root" item="v">
+	        	<li>
+	            	<a href="{:U('Movie/play', ['id' => $v['id']])}"><img src="__ROOT__/{$v.face196}" width="196" height="110" /></a>
+	            	<p>{$v.name|mb_substr=###, 0, 15, 'UTF-8'}...</p>
+	            </li>
+             </foreach>
+        </ul>
+      
+      
+      </div>
+      <div class="clear"></div>
+       </div>
+    </div>
+<div class="all_1r">
+  <div class="all_1r_3g">  <div class="all_1r_1">
+    推荐视频
+    </div>
+    
+     <div class="all_1r_2">
+     <ul>
+     	<foreach name="recommend" item="v">
+	     	<li>
+	     		<a href="{:U('Movie/play', ['id' => $v['id']])}">
+	     			<img src="__ROOT__/{$v.face80}" width="80" height="45" />
+	     		</a>
+	     		<p> {$v.name|mb_substr=###, 0, 5, 'UTF-8'}...</p>
+	   		</li>
+   		</foreach>
+	</ul>
+     <div class="clear"></div>
+  </div> </div><div class="all_1r_3g"> <div class="all_1r_1">
+    相关动态
+    </div>
+<div class="all_1r_3">
+  <p>
+  
+  <a href="#">
+  <strong>一个落魄流离失...</strong>
+  微电影《占位》屌丝男偷窥车震引血光之灾
+  </a>
+  </p><img src="images/41.png" width="120" height="70" /> </div>
+  
+  
+  <div class="all_1r_31">
+	<ul><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li></ul>  
+  
+  
+  </div>  <div class="clear"></div></div>
+  
+  
+  <div class="all_1r_3g all_1r_4"> <div class="all_1r_1">
+    合作企业
+    </div>
+    
+    <img src="__PUBLIC__/Home/images/42.png" width="245" height="115" /><img src="__PUBLIC__/Home/images/42.png" width="245" height="115" />    <img src="__PUBLIC__/Home/images/42.png" width="245" height="115" /></div>
+  <div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+
+
+<!--脚部开始-->
+<include file="Public/footer"/>
+<!--脚部结束-->
+</body>
+</html>

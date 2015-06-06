@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+.all{
+	width:1120px;
+	margin:0px auto;
+	background:#fff;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	}
+.all_1{
+	text-align:center;
+	}
+.all_2{
+	width:945px;
+	margin:0px auto; 
+	margin-top:20px;
+	padding-left:10px;
+	padding-bottom:15px;
+	border-bottom:1px solid #d1d1d1;
+	}
+.all_2l{
+	width:140px;
+	float:left;
+	}
+.all_2r{
+	margin-top:10px;
+	margin-left:15px;
+	width:500px;
+	float:left;
+	}
+.all_3{
+	width:945px;
+	margin:0px auto;
+	}
+.all_3l{
+	width:570px;
+	padding-top:15px;
+	float:left;
+	border-right:1px solid #d1d1d1;
+	padding-bottom:20px;
+	text-align:center;
+	}
+.all_31_2l{
+	float:left;
+	width:360px;
+	margin-left:70px;
+	margin-top:40px;
+	}
+.all_31_2l table tr td {
+	overflow:hidden;
+	}
+.all_31_2l table tr td strong{
+background:#ed8723;
+padding:2px 4px;
+color:#FFF;
+	
+	}
+.all_31_2r {
+	width:90px;
+	float:right;
+	margin-top:70px;
+	
+	}
+.all_3r{
+	float:left;
+	line-height:20px;
+	width:271px;
+	margin-left:20px;
+	margin-top:45px;
+	font-size:13px;
+	}
+.all_31_2a{
+	float:left;
+	font-size:16px;
+	}
+.all_4{
+	margin:0px auto; 
+	margin-top:20px;
+	padding-top:15px;
+	font-size:16px;
+	width:945px;
+		border-top:1px solid #d1d1d1;
+	
+	}
+.all_4 input{
+	width:180px;
+	height:30px;
+	border:1px solid #e0e0e0; 
+	background:#e0e0e0;
+	}
+.all_5{
+	padding-top:20px;
+	height:290px;
+	position:relative;
+	}
+.all_5 ul{
+	margin-left:100px;
+	}
+.all_5 ul li{
+	float:left;
+	width:170px;
+	margin-right:15px;
+	text-align:center;
+	line-height:30px;
+	
+	}
+.all_5 ul li img{
+	border:1px solid #dbd5bb;
+	}
+.all_5_1l{
+	position:absolute;
+	left: 49px;
+	top: 112px;
+	}
+.all_5_1r{
+	position:absolute;
+	left: 1035px;
+	top: 104px;
+	}
+.all_6{
+	width:960px;
+	
+	margin-left:100px;
+	}
+.all_6 select ,.all_6 select option{
+	width:188px;
+	line-height:38px;
+	height:38px;
+	}
+	.all_7 {
+			width:960px;
+			border-top:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;
+			margin:0px auto;
+			margin-top:15px;
+			line-height:50px;
+		 font-size:15px;
+		}
+.all_7 a{
+ background:#e2e2e2;
+
+ padding:2px 6px; }
+.all_8{
+	width:960px;
+	margin:0px auto;
+	}
+.all_8l{
+	margin-top:15px;
+	margin-left:30px;
+	width:160px;
+	float:left;	
+	line-height:25px;
+	}
+.all_8l strong{
+text-align:center;
+	display:block;
+	}
+.all_8l p{
+	font-size:12px;
+	text-align:left;
+	}
+.all_8r{
+	width:725px;
+	margin:0px auto;
+	float:right;
+	}
+.all_8r strong{
+	color:#F00;
+	}
+	.all_8r span{
+		color:#51b76b;
+		font-weight:bold;
+		}

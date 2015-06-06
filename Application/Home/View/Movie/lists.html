@@ -1,0 +1,35 @@
+<include file="Public/header"/>
+<!-- page special css plugin here -->
+<link href="__PUBLIC__/Home/css/xkdy.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--nav start-->
+<include file="Public/nav"/>
+<!--nav end-->
+<div class="all">
+  <div class="all_1"> 
+    <foreach name="cate" item="v">
+  		<a <if condition="$cid eq $v['id']">class="zzsy"</if> href="{:U('Movie/lists',['cid' => $v['id']])}">{$v.name}</a>
+  	</foreach>
+  </div>
+  <div class="all_5">
+  	<foreach name="list" item="v">
+	  	<div class="all_51">
+	    	<div class="all_51_1"><img src="__ROOT__/{$v.face209}" width="209" height="114" /></div>
+	    <div class="all_51_2"><a href="{:U('Movie/play', ['id' => $v['id']])}">{$v.name|mb_substr=###, 0, 15, 'UTF-8'}...</a></div>
+	    </div>
+    </foreach>
+  
+  	<div class="clear"></div>
+  </div> 
+  <div class="page-style">{$page}</div>
+  <div class="clear"></div>
+</div>
+
+
+
+<!--脚部开始-->
+<include file="Public/footer"/>
+<!--脚部结束-->
+</body>
+</html>

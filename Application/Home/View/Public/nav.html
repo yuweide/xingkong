@@ -1,0 +1,59 @@
+<div class="top">
+  <div class="top_1">
+    <div class="top_1_l"><span>欢迎来到星空影业网！</span><a href="#">登录</a>|<a href="#">注册</a>|<a href="#">OA系统</a></div>
+    <div class="top_1_r">
+      <div class="wenbenyu">
+        <input class="wenbenyu" name="" type="text" />
+      </div>
+      <div class="anniu">
+        <input name="" type="submit" class="anniu" value="" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="daohang">
+  <div class="daohang_1">
+    <ul>
+      <li><a <eq name="Think.CONTROLLER_NAME|strtolower" value="index">class="active"</eq> href="{:U('Index/index')}">
+        <p><img src="__PUBLIC__/Home/Images/1.png" width="33" height="33" /></p>
+        <p>首页</p>
+        </a></li>
+      <li><a>
+        <p><img src="__PUBLIC__/Home/Images/2.png" width="38" height="30" /></p>
+        <p>电影</p>
+        </a></li>
+      <li><a <eq name="Think.CONTROLLER_NAME|strtolower" value="theater">class="active"</eq> href="{:U('Theater/index')}">
+        <p><img src="__PUBLIC__/Home/Images/3.png" width="36" height="34" /></p>
+        <p>影城</p>
+        </a></li>
+      <li><a <eq name="Think.CONTROLLER_NAME|strtolower" value="news">class="active"</eq> href="{:U('News/index')}">
+        <p><img src="__PUBLIC__/Home/Images/4.png" width="31" height="31" /></p>
+        <p>新闻</p>
+        </a></li>
+      <li><a <eq name="Think.CONTROLLER_NAME|strtolower" value="movie">class="active"</eq> href="{:U('Movie/index')}">
+        <p><img src="__PUBLIC__/Home/Images/5.png" width="29" height="30" /></p>
+        <p>影视</p>
+        </a></li>
+      <li><a <eq name="Think.CONTROLLER_NAME|strtolower" value="interaction">class="active"</eq> href="{:U('Interaction/index')}">
+        <p><img src="__PUBLIC__/Home/Images/6.png" width="30" height="32" /></p>
+        <p>互动</p>
+        </a></li>
+      <li><a href="#">
+        <p><img src="__PUBLIC__/Home/Images/7.png" width="34" height="34" /></p>
+        <p>购票</p>
+        </a></li>
+      <li><a <eq name="Think.CONTROLLER_NAME|strtolower" value="kanwu">class="active"</eq> href="{:U('kanwu/index')}">
+        <p><img src="__PUBLIC__/Home/Images/8.png" width="49" height="32" /></p>
+        <p>广播报</p>
+        </a></li>
+      <li><a <eq name="Think.CONTROLLER_NAME|strtolower" value="about">class="active"</eq> href="{:U('About/index')}">
+        <p><img src="__PUBLIC__/Home/Images/9.png" width="33" height="35" /></p>
+        <p>关于</p>
+        </a></li>
+    </ul>
+  </div>
+</div>
+<neq name="Think.CONTROLLER_NAME|strtolower" value="index">
+<div class="present">你现在的位置：<a href="javascript:;">首页</a> > <a href="javascript:;">{$title} </a><if condition="$titleL1"> > <a href="javascript:;">{$titleL1}</a></if></div>
+</neq>
+<div class="clear"></div>

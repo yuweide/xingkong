@@ -1,0 +1,96 @@
+[ 2015-05-28T10:25:24+08:00 ] ::1 /xk/index.php/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+ERR: 无法加载模块:News
+
+[ 2015-05-28T10:26:07+08:00 ] ::1 /xk/Public/css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T10:26:07+08:00 ] ::1 /xk/Public/css/xkdy.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T10:26:09+08:00 ] ::1 /xk/Public/css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T10:26:09+08:00 ] ::1 /xk/Public/css/xkdy.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001834s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T13:39:27+08:00 ] ::1 /xk/Public/Default/images/no_image.gif
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T13:39:27+08:00 ] ::1 /xk/Public/Default/images/no_image.gif
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T13:39:38+08:00 ] ::1 /xk/Public/Default/images/no_image.gif
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T13:39:38+08:00 ] ::1 /xk/Public/Default/images/no_image.gif
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T16:59:13+08:00 ] ::1 /xk/Public/Default/images/no-image.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T16:59:20+08:00 ] ::1 /xk/Public/Default/images/no-image.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T17:22:26+08:00 ] ::1 /xk/Public/Home/image/5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005073s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T17:22:26+08:00 ] ::1 /xk/Public/Home/image/li1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T17:22:26+08:00 ] ::1 /xk/Public/Home/image/6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T17:22:26+08:00 ] ::1 /xk/Public/Home/image/4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T17:22:26+08:00 ] ::1 /xk/Public/Home/image/7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002357s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T17:22:26+08:00 ] ::1 /xk/Public/Home/image/8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-28T17:22:26+08:00 ] ::1 /xk/Public/Home/image/9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+ERR: 无法加载模块:Public
+

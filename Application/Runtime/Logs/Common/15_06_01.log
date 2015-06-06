@@ -1,0 +1,96 @@
+[ 2015-06-01T09:57:05+08:00 ] ::1 /xingkong/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+ERR: 无法加载模块:News
+
+[ 2015-06-01T15:06:08+08:00 ] ::1 /xingkong/Public/Home/csscss/foucs.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002297s ]
+ERR: 无法加载模块:Public
+
+[ 2015-06-01T15:06:08+08:00 ] ::1 /xingkong/Public/Home/csscss/ys.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+ERR: 无法加载模块:Public
+
+[ 2015-06-01T15:06:08+08:00 ] ::1 /xingkong/Public/Home/cssjs/foucs.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+ERR: 无法加载模块:Public
+
+[ 2015-06-01T15:08:43+08:00 ] ::1 /xingkong/Public/Home/csscss/ys.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载模块:Public
+
+[ 2015-06-01T15:08:43+08:00 ] ::1 /xingkong/Public/Home/csscss/foucs.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+ERR: 无法加载模块:Public
+
+[ 2015-06-01T15:08:43+08:00 ] ::1 /xingkong/Public/Home/cssjs/foucs.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+ERR: 无法加载模块:Public
+
+[ 2015-06-01T15:09:04+08:00 ] ::1 /xingkong/Public/Home/images/29.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+ERR: 无法加载模块:Public
+
+[ 2015-06-01T15:09:04+08:00 ] ::1 /xingkong/Public/Home/images/30.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+ERR: 无法加载模块:Public
+
+[ 2015-06-01T16:48:47+08:00 ] ::1 /xingkong/Public/Home/css/ysbf.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+ERR: 无法加载模块:Public
+
+[ 2015-06-01T18:07:57+08:00 ] ::1 /xingkong/Plugin/Cuplay/CuPlayerSetFile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+ERR: 无法加载模块:Plugin
+
+[ 2015-06-01T18:09:27+08:00 ] ::1 /xingkong/Plugin/Cuplay/CuPlayerSetFile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008354s ]
+ERR: 无法加载模块:Plugin
+
+[ 2015-06-01T18:10:40+08:00 ] ::1 /xingkong/Plugin/Cuplay/CuPlayerSetFile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: 无法加载模块:Plugin
+
+[ 2015-06-01T18:10:56+08:00 ] ::1 /xingkong/Plugin/Cuplay/CuPlayerSetFile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+ERR: 无法加载模块:Plugin
+
+[ 2015-06-01T18:16:36+08:00 ] ::1 /xingkong/xingkong/Upload/movie/201506/556c19e189bbf.flv%22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+ERR: 无法加载模块:Xingkong
+
+[ 2015-06-01T18:16:40+08:00 ] ::1 /xingkong/xingkong/Upload/movie/201506/556c19e189bbf.flv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+ERR: 无法加载模块:Xingkong
+

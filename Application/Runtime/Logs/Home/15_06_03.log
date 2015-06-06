@@ -1,0 +1,186 @@
+[ 2015-06-03T08:52:14+08:00 ] ::1 /xingkong/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001982s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2015-06-03T08:53:06+08:00 ] ::1 /xingkong/index.php/Home/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( type = 1 and status = 1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_news` WHERE `status` = 1 AND `cate_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`desc`,`create_time`,`face200` FROM `cns_news` WHERE `status` = 1 AND `cate_id` = 1 ORDER BY sort LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: titleL1 /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 5 行.
+NOTIC: [8] Undefined variable: titleL1 /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2015-06-03T08:53:10+08:00 ] ::1 /xingkong/Home/Movie/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`face196` FROM `cns_movie` WHERE `cate_id` = 4 AND `status` = 1 ORDER BY sort asc, id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`face196` FROM `cns_movie` WHERE `cate_id` = 5 AND `status` = 1 ORDER BY sort asc, id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`face196` FROM `cns_movie` WHERE `cate_id` = 6 AND `status` = 1 ORDER BY sort asc, id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`face80` FROM `cns_movie` WHERE `status` = 1 AND `recommend` = 1 ORDER BY sort asc, id desc LIMIT 9   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant recommend - assumed 'recommend' /Applications/MAMP/htdocs/xingkong/Application/Home/Controller/MovieController.class.php 第 28 行.
+SQL: SELECT `id`,`name`,`face80` FROM `cns_movie` WHERE ( status=1 ) ORDER BY sort asc, id desc LIMIT 8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined variable: titleL1 /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Home/852bd62dfd25445733de90fbc9bf4da0.php 第 5 行.
+NOTIC: [8] Undefined variable: titleL1 /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Home/852bd62dfd25445733de90fbc9bf4da0.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2015-06-03T08:53:10+08:00 ] ::1 /xingkong/Home/Movie/images/41.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2015-06-03T08:53:14+08:00 ] ::1 /xingkong/Home/Movie/play/id/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cns_movie` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`face142` FROM `cns_movie` WHERE `cate_id` = 6 AND `status` = 1 ORDER BY sort asc, id desc LIMIT 4   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`face142` FROM `cns_movie` WHERE ( status=1 ) ORDER BY sort asc, id desc LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cid /Applications/MAMP/htdocs/xingkong/Application/Home/Controller/MovieController.class.php 第 83 行.
+SQL: SELECT `id`,`name`,`face96` FROM `cns_movie` WHERE `id` <> '11' ORDER BY sort asc, id desc LIMIT 6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2015-06-03T08:53:15+08:00 ] ::1 /xingkong/Home/Movie/play/id/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cns_movie` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`face142` FROM `cns_movie` WHERE `cate_id` = 6 AND `status` = 1 ORDER BY sort asc, id desc LIMIT 4   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`face142` FROM `cns_movie` WHERE ( status=1 ) ORDER BY sort asc, id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cid /Applications/MAMP/htdocs/xingkong/Application/Home/Controller/MovieController.class.php 第 83 行.
+SQL: SELECT `id`,`name`,`face96` FROM `cns_movie` WHERE `id` <> '11' ORDER BY sort asc, id desc LIMIT 6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2015-06-03T08:53:37+08:00 ] ::1 /xingkong/Home/Theater/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `cns_theater` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cns_city` [ RunTime:0.0039s ]
+SQL: SELECT `name`,`id` FROM `cns_city` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `cns_theater` WHERE `city_id` = 1  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `cns_theater` WHERE `city_id` = 2  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `cns_theater` WHERE `city_id` = 3  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `cns_theater` WHERE `city_id` = 4  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `cns_theater` WHERE `city_id` = 5  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `cns_theater` WHERE `city_id` = 6  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `cns_theater` WHERE `city_id` = 7  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: titleL1 /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Home/77ff3f5bc94a30afb121b4df02a1ba6e.php 第 5 行.
+NOTIC: [8] Undefined variable: titleL1 /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Home/77ff3f5bc94a30afb121b4df02a1ba6e.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2015-06-03T08:53:40+08:00 ] ::1 /xingkong/Home/Theater/detail/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `cns_theater` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cns_theater` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cns_theater_photo` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cns_theater_photo` WHERE `theater_id` = 1 ORDER BY id desc LIMIT 3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+

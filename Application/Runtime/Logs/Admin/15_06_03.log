@@ -1,0 +1,322 @@
+[ 2015-06-03T08:52:19+08:00 ] ::1 /xingkong/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: titleL2 /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 401 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2015-06-03T08:52:25+08:00 ] ::1 /xingkong/Admin/Movie/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0203s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-06-03T08:52:27+08:00 ] ::1 /xingkong/Admin/Movie/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002981s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 7 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 8 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0056s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005626s ]
+
+[ 2015-06-03T08:52:27+08:00 ] ::1 /xingkong/Admin/Movie/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001737s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2015-06-03T08:52:31+08:00 ] ::1 /xingkong/Admin/Movie/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2015-06-03T08:53:54+08:00 ] ::1 /xingkong/Admin/Movie/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-06-03T08:54:10+08:00 ] ::1 /xingkong/Admin/Movie/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 7 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 8 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0044s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0046s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017637s ]
+
+[ 2015-06-03T08:54:10+08:00 ] ::1 /xingkong/Admin/Movie/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002020s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003716s ]
+
+[ 2015-06-03T08:54:13+08:00 ] ::1 /xingkong/Admin/Category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cns_category` WHERE ( type=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cns_category` WHERE ( type=2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2015-06-03T08:55:10+08:00 ] ::1 /xingkong/Admin/Category/add/type/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cns_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000640s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+

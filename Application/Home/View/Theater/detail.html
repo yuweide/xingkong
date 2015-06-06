@@ -1,0 +1,100 @@
+<include file="Public/header"/>
+<!-- page special css plugin here -->
+<link href="__PUBLIC__/Home/css/lite.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Home/css/ycjs.css" rel="stylesheet" type="text/css" />
+<!--引用百度地图API-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak={:C('BAIDU_MAP_AK')}"></script>
+</head>
+<body>
+<!--nav start-->
+<include file="Public/nav"/>
+<!--nav end-->
+<div class="all">
+	<div class="all_1">
+    	<div class="all_11">
+        	<div class="all_11_l"><img src="__ROOT__/{$theater.face520}" width="522" height="291" /></div>
+        	<div class="all_11_r">
+            	<h2>{$theater.name}</h2>
+                <p class="jianj">{$theater.intro}</p>
+                <p>订票热线：{$theater.order_line}</p>
+                <p>团购热线：{$theater.group_line}</p>
+                <p>地址：{$theater.address}</p>
+            </div>
+        <div class="clear"></div>
+        </div>
+        <div class="all_12">
+        	<foreach name="photo" item="v">
+        		<div><img src="__ROOT__/{$v.path}" width="351" height="253" /></div>
+        	</foreach>
+		  <div class="clear" style="height:20px;"></div>
+        </div>          
+    <div class="all_13" style="width:1085px;height:542px;border:#ccc solid 1px;font-size:12px;" id="map"></div>
+  </div>
+<div class="clear"></div>
+</div>
+<!--脚部开始-->
+<include file="Public/footer"/>
+<!--脚部结束-->
+<script type="text/javascript">
+	var x = "{$theater.x}";
+	var y = "{$theater.y}";
+	var name = "{$theater.name}";
+	var intro = "{$theater.intro}";
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(x,y),19);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:intro,title:name,imageOffset: {width:-46,height:-21},position:{lat:y,lng:x}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+</body>
+</html>

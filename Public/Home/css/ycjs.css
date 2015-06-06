@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+.all{
+	width:1120px;
+	background:#FFF;
+	margin:0px auto;
+	margin-bottom:20px;
+	padding-bottom:20px;
+	}
+.all_1{
+	padding:15px 0px 0px 15px;
+	}
+.all_11_l{
+	float:left;
+	width:522px;
+	}
+.all_11_r{
+	float:right;
+	width:560px;padding-right:10px;
+	color:#404040;
+	font-size:14px;
+	line-height:25px;
+	}
+p.jianj{
+	margin-top:15px;
+	margin-bottom:20px;
+	}
+.all_12{
+	margin-top:20px;
+	}
+.all_12 div{
+	float:left;
+	width:351px;
+	margin-right:17px;
+	}
+.all_13{
+	
+	margin-top:10px;}

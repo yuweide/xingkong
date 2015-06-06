@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+.all{
+	width:1120px;
+	margin:0px auto;
+	}
+.all_1l{
+	float:left;
+	width:375px;
+	}
+.all_1l_1 a{
+	float:right;
+	}
+.all_1l_1 strong{
+	font-size:16px;
+	color:#363635;
+	}
+.all_1l_2{
+	margin-top:10px;
+	height:110px;
+	}
+.all_1l_2l{
+	float:left;
+	width:140px;
+	}
+	
+.all_1l_2r h3{
+	color:#151515;
+	font-size:16px;
+	}
+.all_1l_2r p{
+line-height:20px;
+	}
+.all_1l_2r{
+	float:right;
+	height:110px;
+	color:#7d7d7d;
+	width:220px;
+	}
+.all_1r{
+	
+	float:right;
+	width:720px;
+	}
+.all_1r_1{
+	margin-top:10px;
+	}
+.all_1r_1 ul{
+	width:730px;
+	}
+.all_1r_1 ul li{
+	float:left;
+	width:160px;
+
+	margin-right:22px;
+	}
+.all_1l_3 ul li{
+	background:url(../images/list.png) left center no-repeat;
+	padding-left:10px;
+	line-height:25px;
+	}
+.all_1l_3 ul li span{
+	float:right;
+	
+		
+	}
+.all_2{
+	margin-top:20px;
+	}
+.all_2l{
+	width:812px;
+	float:left;
+	}
+.all_2r{
+	float:right;
+	width:290px;
+	color:#3e3e3e;
+	font-size:14px;
+	line-height:22px;
+	}
+.all_2r_2{
+	margin-top:15px;
+	}
+.all_2r_2l{
+	float:left;
+	width:88px;
+	}
+.all_2r_2r{
+	float:right;
+	width:190px;
+	}
+	
+.all_3{
+	margin-top:20px;
+	}	
+.all_3l{
+	float:left;
+	width:815px;
+	}
+.all_3l_1{
+	padding-bottom:5px;
+	}
+.all_3l_1 a{
+	font-weight:bold;
+	font-size:17px;
+	color:#363635;
+	margin-right:20px;
+	}
+.all_3l_1 .sangying{
+	color:#ff8a00;
+	border-bottom:3px solid #ff8a00;
+	padding-bottom:2px;
+	
+	}
+.all_3l_2{
+	margin-top:20px;
+	}
+.all_3l_2 ul {
+	width:825px;
+	}
+.all_3l_2 ul li{
+float:left;
+margin-bottom:20px;
+margin-right:20px;
+width:186px;	
+	}
+.all_3r{
+	float:right;
+	width:290px;
+	margin-top:50px;
+	}
+.all_3r_1 ul{
+	width:300px;
+	}
+.all_3r_1 ul li{
+	width:88px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	}
+.all_3r_2 img{
+	margin-bottom:10px;
+	}
+.friendship{
+	width:100%;
+	background:#525252;
+	}
+.friendship_1{
+width:1120px;
+margin:0 auto; 
+padding:15px 0px;
+height:60px;
+	}
+.friendship_l{
+	line-height:60px;
+	float:left;
+	width:80px;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+	}
+.friendship_r{
+	float:right;
+	width:1030px;
+	
+	}
+.friendship_r img{
+margin-right:10px;	
+	}

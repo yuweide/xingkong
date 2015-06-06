@@ -1,0 +1,137 @@
+<include file="Public/header"/>
+<!-- page special css plugin here -->
+<link href="__PUBLIC__/Home/css/ysbf.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/Plugin/Cuplay/images/swfobject.js"></script>
+</head>
+<body>
+<!--nav start-->
+<include file="Public/nav"/>
+<!--nav end-->
+
+<div class="all">
+  <div class="all_1">
+    <div class="all_11">{$data.name}</div>
+    <div class="all_12">
+      <div class="all_12_l" id="CuPlayer" class="video"></div>
+      <div class="all_12_r">
+      <div class="all_12_r1">
+      
+      	<h1>推荐列表</h1>
+        <ul>
+        	<foreach name="recommend" item="v">
+		         <li>
+		      		<div class="all_12_r1l"><a href="{:U('Movie/play', ['id' => $v['id']])}"><img src="__ROOT__/{$v.face142}" width="142" height="81" /></a></div>
+            		<div class="all_12_r1r">{$v.name}</div>
+		         </li>
+        	</foreach>
+        </ul>
+      </div>
+      </div>
+       <div class="clear"></div>
+    </div>
+    
+    <div class="all_13">
+    <div class="all_13_l">{$data.intro}</div>
+    
+    <div class="all_13_r bdsharebuttonbox"><span>分享：</span>
+		<a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    </div>
+      <div class="clear"></div>
+    </div>
+    
+    
+    <div class="all_14">
+   	  <h1>更多视频</h1>
+    <ul>
+    	<foreach name="more" item="v">
+	         <li>
+	         	<a href="{:U('Movie/play', ['id' => $v['id']])}">
+	      			<img src="__ROOT__/{$v.face96}" width="96" height="85" />
+	      		</a>
+	      		<p><a href="">{$v.name|mb_substr=###, 0, 7, 'UTF-8'}...</a></p>
+	         </li>
+	    </foreach>
+    </ul>
+    <div class="clear"></div>
+    </div>
+    
+    <div class="all_15">
+    <h1>影评</h1>
+    <div class="all_151">
+    	<form>
+	    	 <!-- <img src="__PUBLIC__/Home/images/38.png" width="1071" height="128" />  -->
+	    	 <textarea name="content" rows="1"  id="ue-content"></textarea>
+	    	 <input type="hidden" value="{$data.id}" name="id">
+	    	 <input type="image" src="__PUBLIC__/Home/images/btn.jpg" style="float:right; margin-right:30px; margin-top:10px;">
+   		</form>
+    </div>
+    </div>
+  </div>
+  
+  <div class="clear"></div>
+</div>
+
+
+<!--脚部开始-->
+<include file="Public/footer"/>
+<!--脚部结束-->
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Admin/vendor/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Plugin/ueditor/ueditor.config_comment.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Plugin/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Plugin/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+	//实例化编辑器
+	UE.getEditor('ue-content');
+</script>
+<script type="text/javascript">
+	var swf = "__PUBLIC__/Plugin/Cuplay/CuPlayerMiniV4.swf";
+	var flv = "__ROOT__/{$data.url}";
+	var php = "__PUBLIC__/Plugin/Cuplay/CuPlayerSetFile.php";
+	var start = "__PUBLIC__/Plugin/Cuplay/images/start.jpg";
+	var so = new SWFObject(swf,"CuPlayerV4","752","454","9","#000000");
+	so.addParam("allowfullscreen","true");
+	so.addParam("allowscriptaccess","always");
+	so.addParam("wmode","opaque");
+	so.addParam("quality","high");
+	so.addParam("salign","lt");
+	so.addVariable("CuPlayerSetFile",php); 
+	so.addVariable("CuPlayerFile",flv); 
+	so.addVariable("CuPlayerImage",start);
+	so.addVariable("CuPlayerWidth","600"); 
+	so.addVariable("CuPlayerHeight","410"); 
+	so.addVariable("CuPlayerAutoPlay","yes"); 
+	//so.addVariable("CuPlayerLogo","images/logo.png"); 
+	//so.addVariable("CuPlayerPosition","bottom-right"); 
+	so.write("CuPlayer");
+</script>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script>
+	$(function() {
+		var url = "{:U('Movie/comment')}";
+		$('input[type=image]').click(function() {
+			var data = $('form').serialize();
+			$.ajax({
+				  method  : "POST",
+				  url     : url,
+				  data    : data,
+				  success : function(data){
+					  if (data == 1) {
+						  alert('评论成功，请等待管理员审核');
+					  } else {
+						  alert('评论失败，请重试');
+					  }
+				  }
+			})
+			return false;
+		});
+	});
+
+
+</script>
+
+
+
+</body>
+</html>
