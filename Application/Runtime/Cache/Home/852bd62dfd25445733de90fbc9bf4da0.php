@@ -72,12 +72,7 @@
 <!-- focues start -->
 <div class="mod_focus_show" id="divimgplay">
   <ul class="mod_focus_pic" id="divimginfog_imgPlayer">
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/b01.jpg" alt="" width="1120" height="400" /></a></li>
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/b02.jpg" alt="" width="1120" height="400" /></a></li>
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/b03.jpg" alt="" width="1120" height="400" /></a></li>
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/b04.jpg" alt="" width="1120" height="400" /></a></li>
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/b05.jpg" alt="" width="1120" height="400" /></a></li>
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/b06.jpg" alt="" width="1120" height="400" /></a></li>
+    <?php if(is_array($ad)): foreach($ad as $key=>$v): ?><li><a href="<?php echo ($v["url"]); ?>" target="_blank"> <img src="/xingkong/<?php echo ($v["big_thumb"]); ?>" alt="" width="1120" height="400" /></a></li><?php endforeach; endif; ?>
   </ul>
   <ul class="mod_focus_title" id="ptitleg_imgPlayer">
     <li class="current">
@@ -87,12 +82,7 @@
   </ul>
   <div class="focus_switch"><a href="javascript:;" class="icon_prev"></a><a href="javascript:;" class="icon_next"></a></div>
   <ul class="mod_focus_list" id="divpageinfog_imgPlayer">
-    <li class="current"><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/small01.jpg" alt="第1张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/small02.jpg" alt="第2张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/small03.jpg" alt="第3张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/small04.jpg" alt="第4张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/small05.jpg" alt="第5张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
-    <li><a href="javascript:;" target="_blank"> <img src="/xingkong/Public/Home/images/small06.jpg" alt="第6张图片的描述信息" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li>
+    <?php if(is_array($ad)): foreach($ad as $key=>$v): ?><li><a href="javascript:;" target="_blank"> <img src="/xingkong/<?php echo ($v["big_thumb"]); ?>" alt="<?php echo ($v["desc"]); ?>" width="60" height="60" /><span class="border"></span><span class="mask"></span></a></li><?php endforeach; endif; ?>
   </ul>
 </div>
 <script type="text/javascript">
@@ -162,31 +152,37 @@
 	   		</li><?php endforeach; endif; ?>
 	</ul>
      <div class="clear"></div>
-  </div> </div><div class="all_1r_3g"> <div class="all_1r_1">
-    相关动态
+  </div></div>
+  
+  <div class="all_1r_3g"> 
+	  <div class="all_1r_1">相关动态</div> 	
+	  <?php if($art): ?><div class="all_1r_3">
+		  <p>
+			  <a href="<?php echo U('News/detail', ['id' => $art['id']]);?>">
+			  <strong><?php echo (mb_substr($art['title'], 0, 6, 'UTF-8')); ?>...</strong>
+			<?php echo (mb_substr($art['desc'], 0, 20, 'UTF-8')); ?>...
+			  </a>
+		  </p>
+		  <img <?php if($art['face200']): ?>src="/xingkong/<?php echo ($art['face200']); ?>"<?php else: ?>src="/xingkong/Public/Default/images/no_image.jpg"<?php endif; ?> width="120" height="70" /> 
+	  </div><?php endif; ?> 
+	 
+	  <div class="all_1r_31">
+		<ul>
+			<?php if(is_array($arts)): foreach($arts as $key=>$v): ?><li><a href="<?php echo U('News/detail', ['id'=>$v['id']]);?>"><?php echo (mb_substr($v["title"], 0, 6, 'UTF-8')); ?>...</a></li><?php endforeach; endif; ?>
+		</ul>   
+	  </div>  
+	  <div class="clear"></div>
+  </div>
+  
+  
+  <div class="all_1r_3g all_1r_4"> 
+  	<div class="all_1r_1">
+    	合作企业
     </div>
-<div class="all_1r_3">
-  <p>
-  
-  <a href="#">
-  <strong>一个落魄流离失...</strong>
-  微电影《占位》屌丝男偷窥车震引血光之灾
-  </a>
-  </p><img src="images/41.png" width="120" height="70" /> </div>
-  
-  
-  <div class="all_1r_31">
-	<ul><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li><li><a href="#">微电影《她们》上集：家境贫寒女</a></li></ul>  
-  
-  
-  </div>  <div class="clear"></div></div>
-  
-  
-  <div class="all_1r_3g all_1r_4"> <div class="all_1r_1">
-    合作企业
+    <?php if(is_array($enterprise)): foreach($enterprise as $key=>$v): ?><a href="<?php echo ($v["url"]); ?>" target="_blank" title="<?php echo ($v["name"]); ?>">
+    		<img src="/xingkong/<?php echo ($v["face245"]); ?>" width="245" height="115" alt="<?php echo ($v["name"]); ?>}"/>
+    	</a><?php endforeach; endif; ?>
     </div>
-    
-    <img src="/xingkong/Public/Home/images/42.png" width="245" height="115" /><img src="/xingkong/Public/Home/images/42.png" width="245" height="115" />    <img src="/xingkong/Public/Home/images/42.png" width="245" height="115" /></div>
   <div class="clear"></div>
 </div>
 <div class="clear"></div>

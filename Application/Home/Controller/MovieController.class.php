@@ -23,7 +23,7 @@ class MovieController extends BaseController{
         $this->colorful = $model->where(['cate_id' => 5, 'status' => 1])->order('sort asc, id desc')->limit(8)->field('id,name,face196')->select();
         //草根原创 cate_id = 6
         $this->root = $model->where(['cate_id' => 6, 'status' => 1])->order('sort asc, id desc')->limit(8)->field('id,name,face196')->select();
-        //推荐 recommend = 1, 如果推荐的电影<9, 则选取其他的凑足9
+        //推荐 recommend = 1,
         $recommend = $model->where(['status' => 1, 'recommend' => 1])->order('sort asc, id desc')->limit(9)->field('id,name,face80')->select();
         $count = count(recommend);
         if ( $count < 9 ) {
@@ -32,7 +32,14 @@ class MovieController extends BaseController{
             $recommend = array_merge($recommend, $addRec);
         }
         $this->recommend = $recommend;
-        //todo
+        //相关动态
+        $model = M('News');
+        $this->art  = $model->where('cate_id=9')->order('sort asc, id desc')->limit(1)->field('id, title, desc, face200')->find();
+        $this->arts = $model->where('cate_id=9')->order('sort asc, id desc')->limit(1,8)->field('id, title')->select();
+        $this->enterprise = M('Enterprise')->order('sort asc, id desc')->limit(3)->field('face245, url, name')->select();
+        
+        //轮播图（广告位）
+        $this->ad = M('Ad')->where('pos=2')->order('sort asc,id desc')->limit(6)->select();
         $this->display();
     }
     /**
@@ -57,6 +64,16 @@ class MovieController extends BaseController{
         $list  = $model->where($map)->field('name, id ,face209')->order('sort asc, id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('list', $list);
         $this->assign('page',$show);
+        $this->display();
+    }
+    /**
+     * 合作企业
+     */
+    public function enterprise () {
+
+        $cate = M('Category')->where('status=1 and type=2')->field('id, name')->select();
+        $this->cate = $cate;
+        $this->enterprise = M('Enterprise')->field('face245, url, name')->order('sort asc, id desc')->select();
         $this->display();
     }
    /**

@@ -33,6 +33,67 @@ class BaseController extends Controller {
         echo json_encode($arr);
     }
     /**
+     * 新闻图片
+     */
+    public function uploadEnterpriseFace() {
+        $thumb = [
+            'face245' => [245, 115]
+        ];
+        $arr =$this->_upload('enterprise/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        echo json_encode($arr);
+    }
+     /**
+     * 广告位大图
+     */
+    public function uploadAdBigThumb() {
+        $pos = I('pos', '', 'intval');
+        $pos = $pos ? $pos : 1;
+        switch ($pos) {
+            case '1':
+                $thumb = ['big_thumb' => [1920, 757]];
+                break;
+            case '2':
+                $thumb = ['big_thumb' => [1120, 400]];
+                break;
+             case '3':
+                $thumb = ['big_thumb' => [226, 340]];
+                break;
+            
+            default:
+                echo json_encode(['status' => 0]);
+                break;
+        }
+        $arr =$this->_upload('ad/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        echo json_encode($arr);
+    }
+
+     /**
+     * 广告位小图
+     */
+    public function uploadAdSmallThumb() {
+        $pos = I('pos', '', 'intval');
+        $pos = $pos ? $pos : 1;
+        switch ($pos) {
+            case '1':
+                $thumb = ['small_thumb' => [360, 170]];
+                break;
+            case '2':
+                $thumb = ['small_thumb' => [60, 60]];
+                break;
+            
+            default:
+                echo json_encode(['status' => 0]);
+                break;
+        }
+        $arr =$this->_upload('ad/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        echo json_encode($arr);
+    }
+
+
+
+
+
+    /**
      * 影城封面
      */
     public function uploadTheaterFace() {
@@ -76,7 +137,8 @@ class BaseController extends Controller {
                 'face96'  => [96, 85],
                 'face196' => [196, 110],
                 'face80'  => [80, 45],
-                'face40'  => [40, 40]
+                'face40'  => [40, 40],
+                'face160' => [160, 181]
             ];
         $arr =$this->_upload('movieFace/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
         echo json_encode($arr);

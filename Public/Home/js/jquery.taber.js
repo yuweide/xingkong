@@ -26,7 +26,7 @@
                 activeClass: 'current', //当前样式
                 delay: 100, //操作延时
                 speed: 300, //移动速度
-                timeout: 3000, //间歇时间
+                timeout: 5000, //间歇时间
                 auto: false, //是否自动滚动
                 setup: 1,//每次滚动多少个
                 defaultShow: 1, //默认显示第n个

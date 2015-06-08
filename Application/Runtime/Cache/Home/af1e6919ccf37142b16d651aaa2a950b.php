@@ -70,6 +70,7 @@
 <div class="all">
   <div class="all_1"> 
     <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><a <?php if($cid == $v['id']): ?>class="zzsy"<?php endif; ?> href="<?php echo U('Movie/lists',['cid' => $v['id']]);?>"><?php echo ($v["name"]); ?></a><?php endforeach; endif; ?>
+    <a href="<?php echo U('Movie/enterprise');?>">合作企业</a>
   </div>
   <div class="all_5">
   	<?php if(is_array($list)): foreach($list as $key=>$v): ?><div class="all_51">

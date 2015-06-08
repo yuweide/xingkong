@@ -11,6 +11,7 @@
     <foreach name="cate" item="v">
   		<a <if condition="$cid eq $v['id']">class="zzsy"</if> href="{:U('Movie/lists',['cid' => $v['id']])}">{$v.name}</a>
   	</foreach>
+    <a href="{:U('Movie/enterprise')}">合作企业</a>
   </div>
   <div class="all_5">
   	<foreach name="list" item="v">

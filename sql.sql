@@ -46,6 +46,7 @@ CREATE TABLE IF NOT EXISTS `cns_xingkong`.`cns_news` (
   `face80` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '文章封面80*90px',
   `desc` VARCHAR(500)  NOT NULL DEFAULT '' COMMENT '描述',
   `content` TEXT NOT NULL DEFAULT '' COMMENT '文章内容',
+  `hot` tinyint(1) NOT NULL DEFAULT 0 COMMENT '热点新闻1=热点新闻，0=非热点新闻',
   `status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1 COMMENT '1=正常，0=停用',
   PRIMARY KEY (`id`)
 )  ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -111,6 +112,7 @@ CREATE TABLE IF NOT EXISTS `cns_xingkong`.`cns_movie` (
   `face96` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '影城封面96*85',
   `face196` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '影城封面196*110',
   `face80` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '影城封面80*45',
+  `face160` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '影城封面160*181',
   `face40` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '影城封面40*40',
   `status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1 COMMENT '1=正常，0=关闭',
   PRIMARY KEY (`id`)
@@ -128,6 +130,35 @@ CREATE TABLE IF NOT EXISTS `cns_xingkong`.`cns_comment` (
   `content`  VARCHAR(255) NOT NULL DEFAULT '' COMMENT '评论时间',
   `user_id` int NOT  NULL DEFAULT 0  COMMENT '评论人id，0则代表游客',
   `status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '1=审核通过，0=审核未通过',
+  PRIMARY KEY (`id`)
+)  ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- -----------------------------------------------------
+-- Table `cns_xingkong`.`cns_enterprise`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `cns_xingkong`.`cns_enterprise` (
+  `id` INT(11)  NOT NULL AUTO_INCREMENT COMMENT '主键，自增',
+  `name` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '名称',
+  `url` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '企业连接',
+  `sort` INT(11) NOT NULL DEFAULT 0 COMMENT '排序',
+  `intro` VARCHAR(500)  NOT NULL DEFAULT '' COMMENT '简介',
+  `face245` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '影城封面245*115',
+  `status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1 COMMENT '1=正常，0=关闭',
+  PRIMARY KEY (`id`)
+)  ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- -----------------------------------------------------
+-- Table `cns_xingkong`.`cns_ad`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `cns_xingkong`.`cns_ad` (
+  `id` INT(11)  NOT NULL AUTO_INCREMENT COMMENT '主键，自增',
+  `url` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '网页地址',
+  `sort` INT(11) NOT NULL DEFAULT 0 COMMENT '排序',
+  `desc` VARCHAR(500)  NOT NULL DEFAULT '' COMMENT '相关描述',
+  `big_thumb` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '大图',
+  `small_thumb` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '小图',
+  `pos` tinyint(1) NOT NULL DEFAULT 0 COMMENT '广告位位置，1=首页，2=影视列表页，3=广电报',   
+  `status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1 COMMENT '1=正常，0=关闭',
   PRIMARY KEY (`id`)
 )  ENGINE=MyISAM DEFAULT CHARSET=utf8;
 

@@ -83,6 +83,7 @@
                               <input type="hidden" name="face96">
                               <input type="hidden" name="face80">
                               <input type="hidden" name="face40">
+                              <input type="hidden" name="face160">
                               
                               <input type="hidden" name="url">
                               
@@ -128,6 +129,7 @@
 			        	$('input[name=face96]').val(data.path.face96);
 			        	$('input[name=face80]').val(data.path.face80);
 			        	$('input[name=face40]').val(data.path.face40);
+			        	$('input[name=face160]').val(data.path.face160);
 			        	$('#no-image').attr('src', "__ROOT__/"+data.path.face209);
 			        } else {
 			        	alert('图片上传失败，请重试');

@@ -139,7 +139,7 @@
 
                 <nav class="main-navigation">
                     <ul>
-                        <li <eq name="Think.CONTROLLER_NAME|strtolower" value="news">class="active"</eq>>
+                        <li <eq name="Think.CONTROLLER_NAME|strtolower" value="index">class="active"</eq>>
                             <a href="{:U('Index/index')}">
                                 <i class="fa fa-coffee"></i>
                                 <span>首页</span>
@@ -185,7 +185,7 @@
                             </ul>
                             
                         </li>
-                        <li class="dropdown show-on-hover <eq name="Think.CONTROLLER_NAME|strtolower" value="index">active</eq>">
+                        <li class="dropdown show-on-hover <eq name="Think.CONTROLLER_NAME|strtolower" value="news">active</eq>">
                             <a href="javascript:;" data-toggle="dropdown">
                                 <i class="fa fa-file"></i>
                                 <span>新闻管理</span>
@@ -203,6 +203,33 @@
                                 </li>
                             </ul>
                         </li>
+
+                         <li class="dropdown show-on-hover <eq name="Think.CONTROLLER_NAME|strtolower" value="admanage">active</eq>">
+                            <a href="javascript:;" data-toggle="dropdown">
+                                <i class="fa fa-desktop"></i>
+                                <span>广告位管理</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{:U('AdManage/index')}">
+                                        <span>首页广告位</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{:U('AdManage/index', ['pos' => 2])}">
+                                        <span>影视列表页广告位</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{:U('AdManage/index', ['pos' => 3])}">
+                                        <span>广电报广告位</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+
                         <li class="dropdown show-on-hover">
                             <a href="javascript:;" data-toggle="dropdown">
                                 <i class="fa fa-gears"></i>
@@ -219,6 +246,11 @@
                                         <span>城市</span>
                                     </a>
                                 </li>
+                                 <li>
+                                    <a href="{:U('Enterprise/index')}">
+                                        <span>合作企业</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -228,64 +260,7 @@
                                 <span>Mailbox</span>
                             </a>
                         </li>
-                        <li class="dropdown active show-on-hover">
-                            <a href="javascript:;" data-toggle="dropdown">
-                                <i class="fa fa-file"></i>
-                                <span>Pages</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="tasks.html">
-                                        <span>Tasks</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="profile.html">
-                                        <span>Profile</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="invoice.html">
-                                        <span>Invoice</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="gallery.html">
-                                        <span>Gallery</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="signin.html">
-                                        <span>Signin</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="signup.html">
-                                        <span>Signup</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="lock.html">
-                                        <span>Lock Screen</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="404.html">
-                                        <span>404 Page</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="500.html">
-                                        <span>500 Page</span>
-                                    </a>
-                                </li>
-                                <li class="active">
-                                    <a href="blank.html">
-                                        <span>Blank</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                        
                         <li class="dropdown show-on-hover">
                             <a href="javascript:;" data-toggle="dropdown">
                                 <i class="fa fa-gift"></i>

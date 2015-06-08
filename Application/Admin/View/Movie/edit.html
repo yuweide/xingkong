@@ -41,7 +41,7 @@
 	                              <div class="col-sm-offset-2 col-sm-8">
 	                                  <div class="checkbox">
 	                                      <label>
-	                                          <input type="checkbox" name="recommend" value="{$data.recommend}" <if condition="$data['recommend'] eq 1">echeked</if>>推荐
+	                                          <input type="checkbox" name="recommend" value="{$data.recommend}" <if condition="$data['recommend'] eq 1">checked</if>>推荐
 	                                      </label>
 	                                  </div>
 	                              </div>
@@ -77,6 +77,7 @@
                               <input type="hidden" name="face96" value="{$data.face96}">
                               <input type="hidden" name="face80" value="{$data.face80}">
                               <input type="hidden" name="face40" value="{$data.face40}">
+                              <input type="hidden" name="face160" value="{$data.face160}">
                               <input type="hidden" name="id" value="{$data.id}">
                               
                               <div class="form-group">
@@ -114,9 +115,14 @@
 		      onUploadSuccess :     function(file, data, response) {
 		        eval('var data = ' + data);
 		        if (data.status == 1) {
-		        	$('input[name=face520]').val(data.path.face520);
-		        	$('input[name=face40]').val(data.path.face40);
-		        	$('#no-image').attr('src', "__ROOT__/"+data.path.face520);
+		        	  $('input[name=face209]').val(data.path.face209);
+                $('input[name=face196]').val(data.path.face196);
+                $('input[name=face142]').val(data.path.face142);
+                $('input[name=face96]').val(data.path.face96);
+                $('input[name=face80]').val(data.path.face80);
+                $('input[name=face40]').val(data.path.face40);
+                $('input[name=face160]').val(data.path.face160);
+                $('#no-image').attr('src', "__ROOT__/"+data.path.face209);
 		        } else {
 		        	$('#info').html('上传失败，请重试');
 		        }

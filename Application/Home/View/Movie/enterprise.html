@@ -1,0 +1,37 @@
+<include file="Public/header"/>
+<!-- page special css plugin here -->
+<link href="__PUBLIC__/Home/css/xkdy.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--nav start-->
+<include file="Public/nav"/>
+<!--nav end-->
+<div class="all">
+  <div class="all_1"> 
+    <foreach name="cate" item="v">
+  		<a href="{:U('Movie/lists',['cid' => $v['id']])}">{$v.name}</a>
+  	</foreach>
+    <a class="zzsy" href="{:U('Movie/enterprise')}">合作企业</a>
+  </div>
+  <div class="all_5" style="overflow:hidden">
+  	<foreach name="enterprise" item="v">
+	  	<div class="all_51">
+	    	<div class="all_51_1">
+         <a href="{$v.url}" title="{$v.name}" target="_blank"><img src="__ROOT__/{$v.face245}" width="245" height="115" /></a>
+        </div>
+	    <div class="all_51_2"></div>
+	    </div>
+    </foreach>
+  	<div class="clear"></div>
+  </div> 
+  <div class="page-style">{$page}</div>
+  <div class="clear"></div>
+</div>
+
+
+
+<!--脚部开始-->
+<include file="Public/footer"/>
+<!--脚部结束-->
+</body>
+</html>

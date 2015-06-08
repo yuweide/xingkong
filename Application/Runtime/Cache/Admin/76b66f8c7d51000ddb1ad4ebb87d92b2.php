@@ -257,6 +257,11 @@
                                         <span>城市</span>
                                     </a>
                                 </li>
+                                 <li>
+                                    <a href="<?php echo U('Enterprise/index');?>">
+                                        <span>合作企业</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li>

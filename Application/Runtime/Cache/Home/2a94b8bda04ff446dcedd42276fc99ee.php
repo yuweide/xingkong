@@ -73,27 +73,22 @@
 	
 	<div class="idx-foc-tmp">
 		<ul class="focus-pic" rel="xtaberItems">
-			<a href="#" class="white">
-				<li class="xtaber-item" back-img="/xingkong/Public/Home/images/f01.jpg"></li>
-			<a href="#" class="white"></a>
-				<li class="xtaber-item" back-img="/xingkong/Public/Home/images/f01.jpg"></li>
-			</a>
-			<a href="#" class="white">
-				<li class="xtaber-item" back-img="/xingkong/Public/Home/images/f01.jpg"></li>
-			</a>
+			<?php if(is_array($ad)): foreach($ad as $key=>$v): ?><a href="<?php echo ($v["url"]); ?>" target="_blank" class="white">
+  				<li class="xtaber-item" back-img="/xingkong/<?php echo ($v["big_thumb"]); ?>"></li>
+        </a><?php endforeach; endif; ?>
 		</ul>
 	</div>
+
 	<div  class="xtaber-tabs">
-		<ul rel="xtaberTabs" id="tab-ul">
-			<li rel="xtaberTabItem" class="current">
-				<img src="/xingkong/Public/Home/images/images/s_90_54_20131107112540527b08344b08c.jpg" >
-			</li>
-			<li rel="xtaberTabItem"><img src="/xingkong/Public/Home/images/images/s_90_54_20131108165940527ca7fc97ed8.jpg" ></li>
-			<li rel="xtaberTabItem"><img src="/xingkong/Public/Home/images/images/s_90_54_2013111114355452807acaf1c6d.jpg" ></li>
+		
+    <ul rel="xtaberTabs" id="tab-ul">
+      <?php if(is_array($ad)): foreach($ad as $key=>$v): ?><li rel="xtaberTabItem">
+  				<img src="/xingkong/<?php echo ($v["small_thumb"]); ?>" >
+  			</li><?php endforeach; endif; ?>
 		</ul>
 	</div>
+
 	<li class="bg"></li>
-	
 	<a href="javascript:;" class="btn-prev"></a>
 	<a href="javascript:;" class="btn-next"></a>
 </div>
@@ -103,31 +98,30 @@
 <div class="all">
   <div class="all_1">
     <div class="all_1l">
-      <div class="all_1l_1"><a href="#">更多》</a><strong>热点新闻</strong></div>
+      <div class="all_1l_1"><a href="<?php echo U('News/index');?>">更多》</a><strong>热点新闻</strong></div>
       <div class="all_1l_2">
-        <div class="all_1l_2l"><img src="/xingkong/Public/Home/images/68.png" width="139" height="95" /></div>
+       
+        <div class="all_1l_2l"><img src="/xingkong/<?php echo ($hot["face200"]); ?>" height="95" width="139"></div>
         <div class="all_1l_2r">
-          <h3>贵州旅游广播"旅游偶像"颁奖</h3>
-          <p>由贵州旅游广播主办的得利多莱平安夜旅游偶像——水墨不插电音乐会在陕西路水墨春秋咖啡厅举行。主持人、众多旅游偶像及听众度过了一个愉快的平安夜晚。</p>
+          <h3><a href="<?php echo U('News/detail', ['id' => $hot['id']]);?>"><?php echo (mb_substr($hot["title"], 0, 6, 'UTF-8')); ?></a></h3>
+          <p><?php echo ($hot["desc"]); ?></p>
         </div>
         <div class="clear"></div>
       </div>
       <div class="all_1l_3">
         <ul>
-          <li><span>04-01</span><a href="#">广电集团领导到贵州广播电视报社慰问加班</a></li>
-          <li><span>04-01</span><a href="#">广电集团领导到贵州广播电视报社慰问加班</a></li>
-          <li><span>04-01</span><a href="#">广电集团领导到贵州广播电视报社慰问加班</a></li>
+          <?php if(is_array($hots)): foreach($hots as $key=>$v): ?><li><span><?php echo (date("m-d", $v["create_time"])); ?></span><a href="<?php echo U('News/detail', ['id' => $v['id']]);?>"><?php echo (mb_substr($hot["title"], 0, 20, 'UTF-8')); ?>...</a></li><?php endforeach; endif; ?>
         </ul>
       </div>
     </div>
     <div class="all_1r">
-      <div class="all_1l_1"><a href="#">更多》</a><strong>视频</strong></div>
+      <div class="all_1l_1"><a href="<?php echo U('Movie/index');?>">更多》</a><strong>视频</strong></div>
       <div class="all_1r_1">
         <ul>
-          <li><img src="/xingkong/Public/Home/images/69.png" width="160" height="181" /></li>
-          <li><img src="/xingkong/Public/Home/images/69.png" width="160" height="181" /></li>
-          <li><img src="/xingkong/Public/Home/images/69.png" width="160" height="181" /></li>
-          <li><img src="/xingkong/Public/Home/images/69.png" width="160" height="181" /></li>
+          <?php if(is_array($recommend)): foreach($recommend as $key=>$v): ?><li>
+            <a href="<?php echo U('Movie/play', ['id' => $v['id']]);?>">
+            <img <?php if($v['face160']): ?>src="/xingkong/<?php echo ($v["face160"]); ?>"<?php else: ?>src="/xingkong/Public/Default/images/no_image.jpg"<?php endif; ?> width="160" height="181" /></a>
+          </li><?php endforeach; endif; ?>
         </ul>
       </div>
     </div>
@@ -251,15 +245,15 @@
 $(function(){
     /* 首页焦点图 */
     if(isNeeded('#j_idx_focus')){
-        var obj = $('#j_idx_focus');
-        $.fn.xTaber({
-            content: obj,
-            tab: obj,
-            auto: true,
-            style: 'left',
-            prev: obj.find('.btn-prev'),
-            next: obj.find('.btn-next')
-        });
+      var obj = $('#j_idx_focus');
+      $.fn.xTaber({
+          content: obj,
+          tab: obj,
+          auto: true,
+          style: 'left',
+          prev: obj.find('.btn-prev'),
+          next: obj.find('.btn-next')
+      });
     }
 });
 </script>
