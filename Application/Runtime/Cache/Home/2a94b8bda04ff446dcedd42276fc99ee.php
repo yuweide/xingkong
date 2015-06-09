@@ -56,7 +56,7 @@
         </a></li>
       <li><a <?php if((strtolower(CONTROLLER_NAME)) == "kanwu"): ?>class="active"<?php endif; ?> href="<?php echo U('kanwu/index');?>">
         <p><img src="/xingkong/Public/Home/Images/8.png" width="49" height="32" /></p>
-        <p>广播报</p>
+        <p>广电报</p>
         </a></li>
       <li><a <?php if((strtolower(CONTROLLER_NAME)) == "about"): ?>class="active"<?php endif; ?> href="<?php echo U('About/index');?>">
         <p><img src="/xingkong/Public/Home/Images/9.png" width="33" height="35" /></p>
@@ -127,7 +127,7 @@
     </div>
     <div class="clear"></div>
   </div>
-  <div class="all_2">
+  <!-- <div class="all_2">
     <div class="all_2l"> <img src="/xingkong/Public/Home/images/70.png" width="812" height="318" /></div>
     <div class="all_2r">
       <div class="all_2r_1"> 伴随着贵州电视台锐意进取的改革步伐,《贵州广播电视报》坚持以娱乐资讯为自身特色，不断创新提高，使内容更加喜闻乐见，贴近生活、成为贵州省唯一的大型文娱资证综合类报纸。其"社会""生活""影视""体育"等栏目和精彩的版面，深受读者喜爱。《贵州广播电视报》坚持以娱乐资讯为自身特色，不断创新提高，使内容更加喜闻乐见，贴近生活、成为贵州省唯一的大型文娱资证综合类报纸。</div>
@@ -142,7 +142,7 @@
       </div>
     </div>
     <div class="clear"></div>
-  </div>
+  </div> -->
   <div class="all_3">
     <div class="all_3l">
       <div class="all_3l_1"> <a class="sangying" href="#">影城正在上映</a><a href="#">即将上映</a> </div>
@@ -182,7 +182,22 @@
           <li><img src="/xingkong/Public/Home//xingkong/Public/Home/images/78.png" width="88" height="86" /></li>
         </ul>
       </div>
-      <div class="all_3r_2"> <img src="/xingkong/Public/Home/images/79.png" width="278" height="110" /><img src="/xingkong/Public/Home/images/80.png" width="278" height="110" /><img src="/xingkong/Public/Home/images/81.png" width="278" height="110" /><img src="/xingkong/Public/Home/images/82.png" width="278" height="110" /><img src="/xingkong/Public/Home/images/83.png" width="278" height="110" /></div>
+      <div class="all_3r_2"> 
+        <img src="/xingkong/Public/Home/images/79.png" width="278" height="110" />
+        <img src="/xingkong/Public/Home/images/80.png" width="278" height="110" />
+        <img src="/xingkong/Public/Home/images/81.png" width="278" height="110" />
+        <img src="/xingkong/Public/Home/images/82.png" width="278" height="110" />
+        <img src="/xingkong/Public/Home/images/83.png" width="278" height="110" />
+      </div>
+      <dl class="gdb">
+        <dt>
+          <img src="/xingkong/Public/Home/images/aaa_03.jpg"  alt="">
+        </dt>
+        <dd>
+          <h3>第1235期</h3>
+          <p>女汉子的爱情奋斗史《幸福请你等等我》，来自猩猩的你《猩球崛起：黎明之战》，范玮琪怀双胞胎 否认人工受</p>
+        </dd>
+      </dl>
     </div>
   </div>
   <div class="clear"></div>

@@ -102,4 +102,31 @@ class MovieController extends BaseController{
             $this->error('删除失败');
         }
     }
+
+    /**
+     * 评论
+     */
+    public function comment()
+    {
+
+        $this->titleL2 = "评论列表";
+        $id = I('id', 0, 'intval');
+        if (!$id) $this->error('参数错误');
+        $this->comment = M('Comment')->where(['type' => 1, 'obj_id' => $id])->order('id desc')->limit(20)->select();
+        $this->display();
+    }
+
+    /**
+     * 删除评论
+     */
+    public function delComment() {
+        $id = I('id', 0, 'intval');
+        if (!$id) $this->error('参数错误');
+        if (M('Comment')->where(['id' => $id])->delete()) {
+            $this->error('删除成功');
+        } else {
+            $this->error('删除失败');
+        }
+    }
+
 }

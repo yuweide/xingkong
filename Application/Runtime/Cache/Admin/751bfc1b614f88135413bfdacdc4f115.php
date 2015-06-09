@@ -207,7 +207,7 @@
                            
                             <a href="javascript:;">
                                 <i class="fa fa-play"></i>
-                                <span>电影管理</span>
+                                <span>影视管理</span>
                             </a>
                              <ul class="dropdown-menu">
                                 <li>
@@ -225,7 +225,7 @@
                         </li>
                         <li class="dropdown show-on-hover <?php if((strtolower(CONTROLLER_NAME)) == "news"): ?>active<?php endif; ?>">
                             <a href="javascript:;" data-toggle="dropdown">
-                                <i class="fa fa-file"></i>
+                                <i class="fa fa-dribbble"></i>
                                 <span>新闻管理</span>
                             </a>
                             <ul class="dropdown-menu">
@@ -237,6 +237,30 @@
                                 <li>
                                     <a href="<?php echo U('News/index');?>">
                                         <span>新闻列表</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown show-on-hover <?php if((strtolower(CONTROLLER_NAME)) == "kanwu"): ?>active<?php endif; ?>">
+                            <a href="javascript:;" data-toggle="dropdown">
+                                <i class="fa fa-file"></i>
+                                <span>广电报</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="<?php echo U('Kanwu/add');?>">
+                                        <span>添加刊物</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Kanwu/index');?>">
+                                        <span>刊物列表</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Kanwu/index');?>">
+                                        <span>文章管理</span>
                                     </a>
                                 </li>
                             </ul>
@@ -259,11 +283,11 @@
                                     </a>
                                 </li>
 
-                                <li>
+                                <!-- <li>
                                     <a href="<?php echo U('AdManage/index', ['pos' => 3]);?>">
                                         <span>广电报广告位</span>
                                     </a>
-                                </li>
+                                </li> -->
                                 
                             </ul>
                         </li>
@@ -425,6 +449,9 @@
 	                                        </td>
 	                                        <td>
 	                                            <a href="<?php echo U('Movie/edit', ['id' => $v['id']]);?>" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑"><span class="fa fa-edit text-success"></span></a>&nbsp;
+
+                                                <a href="<?php echo U('Movie/comment', ['id' => $v['id']]);?>" data-toggle="tooltip" data-placement="top" title="" data-original-title="查看评论"><span class="fa fa-comments text-success"></span></a>&nbsp;
+
                                                	<a class="del" href="<?php echo U('Movie/del', ['id' => $v['id']]);?>" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除"><span class="fa fa-trash-o text-success"></span></a>
 	                                        </td>
 	                                    </tr><?php endforeach; endif; ?>

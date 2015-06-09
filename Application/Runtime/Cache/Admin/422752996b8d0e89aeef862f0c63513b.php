@@ -182,7 +182,7 @@
 
                 <nav class="main-navigation">
                     <ul>
-                        <li <?php if((strtolower(CONTROLLER_NAME)) == "news"): ?>class="active"<?php endif; ?>>
+                        <li <?php if((strtolower(CONTROLLER_NAME)) == "index"): ?>class="active"<?php endif; ?>>
                             <a href="<?php echo U('Index/index');?>">
                                 <i class="fa fa-coffee"></i>
                                 <span>首页</span>
@@ -212,7 +212,7 @@
                            
                             <a href="javascript:;">
                                 <i class="fa fa-play"></i>
-                                <span>电影管理</span>
+                                <span>影视管理</span>
                             </a>
                              <ul class="dropdown-menu">
                                 <li>
@@ -228,9 +228,9 @@
                             </ul>
                             
                         </li>
-                        <li class="dropdown show-on-hover <?php if((strtolower(CONTROLLER_NAME)) == "index"): ?>active<?php endif; ?>">
+                        <li class="dropdown show-on-hover <?php if((strtolower(CONTROLLER_NAME)) == "news"): ?>active<?php endif; ?>">
                             <a href="javascript:;" data-toggle="dropdown">
-                                <i class="fa fa-file"></i>
+                                <i class="fa fa-dribbble"></i>
                                 <span>新闻管理</span>
                             </a>
                             <ul class="dropdown-menu">
@@ -246,6 +246,57 @@
                                 </li>
                             </ul>
                         </li>
+
+                        <li class="dropdown show-on-hover <?php if((strtolower(CONTROLLER_NAME)) == "kanwu"): ?>active<?php endif; ?>">
+                            <a href="javascript:;" data-toggle="dropdown">
+                                <i class="fa fa-file"></i>
+                                <span>广电报</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="<?php echo U('Kanwu/add');?>">
+                                        <span>添加刊物</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Kanwu/index');?>">
+                                        <span>刊物列表</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Kanwu/index');?>">
+                                        <span>文章管理</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                         <li class="dropdown show-on-hover <?php if((strtolower(CONTROLLER_NAME)) == "admanage"): ?>active<?php endif; ?>">
+                            <a href="javascript:;" data-toggle="dropdown">
+                                <i class="fa fa-desktop"></i>
+                                <span>广告位管理</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="<?php echo U('AdManage/index');?>">
+                                        <span>首页广告位</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('AdManage/index', ['pos' => 2]);?>">
+                                        <span>影视列表页广告位</span>
+                                    </a>
+                                </li>
+
+                                <!-- <li>
+                                    <a href="<?php echo U('AdManage/index', ['pos' => 3]);?>">
+                                        <span>广电报广告位</span>
+                                    </a>
+                                </li> -->
+                                
+                            </ul>
+                        </li>
+
                         <li class="dropdown show-on-hover">
                             <a href="javascript:;" data-toggle="dropdown">
                                 <i class="fa fa-gears"></i>
@@ -276,64 +327,7 @@
                                 <span>Mailbox</span>
                             </a>
                         </li>
-                        <li class="dropdown active show-on-hover">
-                            <a href="javascript:;" data-toggle="dropdown">
-                                <i class="fa fa-file"></i>
-                                <span>Pages</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="tasks.html">
-                                        <span>Tasks</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="profile.html">
-                                        <span>Profile</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="invoice.html">
-                                        <span>Invoice</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="gallery.html">
-                                        <span>Gallery</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="signin.html">
-                                        <span>Signin</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="signup.html">
-                                        <span>Signup</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="lock.html">
-                                        <span>Lock Screen</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="404.html">
-                                        <span>404 Page</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="500.html">
-                                        <span>500 Page</span>
-                                    </a>
-                                </li>
-                                <li class="active">
-                                    <a href="blank.html">
-                                        <span>Blank</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                        
                         <li class="dropdown show-on-hover">
                             <a href="javascript:;" data-toggle="dropdown">
                                 <i class="fa fa-gift"></i>

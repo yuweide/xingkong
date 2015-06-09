@@ -18,6 +18,7 @@ class CategoryController extends BaseController {
     public function index () {
         $this->newsLists  = M('Category')->where('type=1')->select();
         $this->videoLists = M('Category')->where('type=2')->select();
+        $this->kanwuLists = M('Category')->where('type=3')->select();
         $this->display();
     }
     /**
@@ -31,6 +32,9 @@ class CategoryController extends BaseController {
                 break;
             case 2 :
                 $titleL2 = "添加影视类别";
+                break;
+            case 3 :
+                $titleL2 = "添加刊物类别";
                 break;
             default:
                 $this->error('参数错误');

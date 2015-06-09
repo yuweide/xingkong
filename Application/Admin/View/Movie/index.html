@@ -60,6 +60,9 @@
 	                                        </td>
 	                                        <td>
 	                                            <a href="{:U('Movie/edit', ['id' => $v['id']])}" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑"><span class="fa fa-edit text-success"></span></a>&nbsp;
+
+                                                <a href="{:U('Movie/comment', ['id' => $v['id']])}" data-toggle="tooltip" data-placement="top" title="" data-original-title="查看评论"><span class="fa fa-comments text-success"></span></a>&nbsp;
+
                                                	<a class="del" href="{:U('Movie/del', ['id' => $v['id']])}" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除"><span class="fa fa-trash-o text-success"></span></a>
 	                                        </td>
 	                                    </tr>

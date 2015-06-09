@@ -127,7 +127,7 @@ width:186px;
 .all_3r{
 	float:right;
 	width:290px;
-	margin-top:50px;
+	margin-top:42px;
 	}
 .all_3r_1 ul{
 	width:300px;
@@ -166,4 +166,37 @@ height:60px;
 	}
 .friendship_r img{
 margin-right:10px;	
-	}
+}
+.gdb dt, .gdb dd {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.gdb {
+	margin:0;
+	padding: 0;
+	height:225px;
+	width: 278px;
+	background-color: #bdbcbc;
+	overflow: hidden;
+}
+.gdb dd {
+	font-size: 14px;
+	color: #454545;
+	width:101px;
+	padding: 10px;
+}
+.gdb dd h3{
+	text-align: center;
+	padding: 10px 0;
+	color:#3a3838;
+	font-weight: bold;
+}
+.gdb dd p{
+	line-height: 20px;
+}
+
+.gdb dt {
+	width:157px;
+}
+

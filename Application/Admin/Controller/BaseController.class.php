@@ -90,9 +90,6 @@ class BaseController extends Controller {
     }
 
 
-
-
-
     /**
      * 影城封面
      */
@@ -143,11 +140,29 @@ class BaseController extends Controller {
         $arr =$this->_upload('movieFace/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
         echo json_encode($arr);
     }
+     /**
+     * 上传刊物图片
+     */
+    public function uploadKanwuFace() {
+        $thumb = [
+                'face508' => [508, 760],
+                'face157' => [157, 224],
+                'face240'  => [240, 360]
+            ];
+        $arr =$this->_upload('kanwuFace/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        echo json_encode($arr);
+    }
     /**
      * 上传电影
      */
     public function uploadMovie() {
         echo json_encode($this->_uploadFile(C('UPLOAD_MOVIE_EXTS'), 'movie/'));
+    }
+    /**
+     * 上传电影
+     */
+    public function uploadPdf() {
+        echo json_encode($this->_uploadFile(['pdf'], 'pdf/'));
     }
     /**
      * 图片上传处理（支持生成多张缩略图）

@@ -253,13 +253,13 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="<?php echo U('AdManage/index', ['pos' => 2]);?>">
                                         <span>影视列表页广告位</span>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#">
+                                    <a href="<?php echo U('AdManage/index', ['pos' => 3]);?>">
                                         <span>广电报广告位</span>
                                     </a>
                                 </li>

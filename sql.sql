@@ -162,6 +162,22 @@ CREATE TABLE IF NOT EXISTS `cns_xingkong`.`cns_ad` (
   PRIMARY KEY (`id`)
 )  ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+-- -----------------------------------------------------
+-- Table `cns_xingkong`.`cns_kanwu`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `cns_xingkong`.`cns_kanwu` (
+  `id` INT(11)  NOT NULL AUTO_INCREMENT COMMENT '主键，自增',
+  `title` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '标题',
+  `number` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '期数',
+  `add_time` INT(11) NOT NULL DEFAULT 0 COMMENT '添加时间',
+  `url` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '路径',
+  `intro` VARCHAR(500)  NOT NULL DEFAULT '' COMMENT '简介',
+  `face508` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '508*760',
+  `face157` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '157*224',
+  `face240` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '240*360',
+  `status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1 COMMENT '1=正常，0=关闭',
+  PRIMARY KEY (`id`)
+)  ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
 

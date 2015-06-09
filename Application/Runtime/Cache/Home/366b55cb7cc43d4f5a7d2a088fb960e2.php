@@ -5,7 +5,7 @@
 <title><?php if($titleL1): echo ($titleL1); ?>-<?php endif; echo ($title); ?>-<?php echo C('SITE_NAME');?></title>
 <link href="/xingkong/Public/Home/css/public.css" rel="stylesheet" type="text/css" />
 <!-- page special css plugin here -->
-<link rel="stylesheet" href="/xingkong/Public/Home/css/lrtk.css" type="text/css" media="screen" charset="gb2312" />
+<link rel="stylesheet" href="/xingkong/Public/Home/css/lrtk.css" type="text/css" media="screen" />
 <link href="/xingkong/Public/Home/css/gbg.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,7 +56,7 @@
         </a></li>
       <li><a <?php if((strtolower(CONTROLLER_NAME)) == "kanwu"): ?>class="active"<?php endif; ?> href="<?php echo U('kanwu/index');?>">
         <p><img src="/xingkong/Public/Home/Images/8.png" width="49" height="32" /></p>
-        <p>广播报</p>
+        <p>广电报</p>
         </a></li>
       <li><a <?php if((strtolower(CONTROLLER_NAME)) == "about"): ?>class="active"<?php endif; ?> href="<?php echo U('About/index');?>">
         <p><img src="/xingkong/Public/Home/Images/9.png" width="33" height="35" /></p>
@@ -72,7 +72,12 @@
 <div class="all"> 
   
   <div class="orbit-wrapper">
-    <div id="featured" class="orbit"> <a href="#"><img src="/xingkong/Public/Home/Images/01.jpg" width="350" alt="《Just Married》" title="《Just Married》"></a> <a href="#"><img src="/xingkong/Public/Home/Images/02.jpg" width="350" alt="《佩加索斯》" title="《佩加索斯》"></a> <a href="#"><img src="/xingkong/Public/Home/Images/03.jpg" width="350" alt="《太庙的一场偶遇》" title="《太庙的一场偶遇》"></a> <a href="#"><img src="/xingkong/Public/Home/Images/04.jpg" width="350" alt="《为爱痴狂》" title="《为爱痴狂》"></a> <a href="#"><img src="/xingkong/Public/Home/Images/05.jpg" width="350" alt="《游走，在北京的每一条街》" title="《游走，在北京的每一条街》"></a> </div>
+    <div id="featured" class="orbit"> 
+      <?php if(is_array($kanwu)): foreach($kanwu as $key=>$v): ?><a target="_blank" href="<?php echo U('Kanwu/viewer', ['id' => $v['id']]);?>">
+          <img src="/xingkong/<?php echo ($v["face508"]); ?>" width="350" alt="第<?php echo ($v["number"]); ?>期" title="第<?php echo ($v["number"]); ?>期">
+        </a><?php endforeach; endif; ?>
+      
+      </div>
     <div class="claer"></div>
   </div>
   <!-- 代码 结束 -->
@@ -109,7 +114,7 @@
     </div>
     <div class="all_1r">
       <div class="all_lr_1">
-        <div class="all_lr_1l">广播简简介</div>
+        <div class="all_lr_1l">广电报简介</div>
         <div class="all_lr_1r"><img src="/xingkong/Public/Home/Images/45.png" width="37" height="24" /></div>
         <div class="clear"></div>
       </div>

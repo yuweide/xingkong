@@ -13,9 +13,9 @@
                                     <li class="active">
                                         <a href="#profile" data-toggle="tab">新闻类别</a>
                                     </li>
-                               <!--      <li>
-                                        <a href="#article" data-toggle="tab">文章类别</a>
-                                    </li>  -->
+                                    <li>
+                                        <a href="#kanwu" data-toggle="tab">广电报类别</a>
+                                    </li> 
                                 </ul>
                                 <section class="panel">
                                     <div class="panel-body">
@@ -107,8 +107,8 @@
                                             </div>
                                             <!-- contentend -->
                                              <!-- article content -->
-                                             <!--
-                                             <div class="tab-pane" id="article">
+                                             
+                                             <div class="tab-pane" id="kanwu">
                                                  <section class="panel">
 												    <div class="panel-body  no-padding">
 												        <table class="table table-bordered table-hover no-margin">
@@ -123,7 +123,7 @@
 												                </tr>
 												            </thead>
 												            <tbody>
-												            	<foreach name="articleList" item="v">
+												            	<foreach name="kanwuLists" item="v">
 												                    <tr>
 												                        <td>{$v.id}</td>
 												                        <td>{$v.name}</td>
@@ -144,12 +144,12 @@
 												    </div>
 												    <div class="panel-footer no-border no-padding">
 												    	<div style="margin-top:10px;">
-												            	<a class="btn btn-color btn-sm" href="{:U('Category/add', array('type' => 1))}"><i class="fa fa-plus"></i> 添加</a>
+												            	<a class="btn btn-color btn-sm" href="{:U('Category/add', array('type' => 3))}"><i class="fa fa-plus"></i> 添加</a>
 												    	</div>
 												    </div>
 												</section>
                                             </div>
-                                            -->
+                                            
                                             <!-- contentend -->
                                            
                                         </div>
