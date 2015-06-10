@@ -41,7 +41,7 @@
 	                              <div class="col-sm-offset-2 col-sm-8">
 	                                  <div class="checkbox">
 	                                      <label>
-	                                          <input type="checkbox" name="recommend" value="{$data.recommend}" <if condition="$data['recommend'] eq 1">checked</if>>推荐
+	                                          <input type="checkbox" name="recommend" value="1" <if condition="$data['recommend'] eq 1">checked</if>>推荐
 	                                      </label>
 	                                  </div>
 	                              </div>
@@ -53,7 +53,7 @@
                                   <div class="col-sm-3">
                                   	<img id="no-image"<if condition="$data['face209']">src="__ROOT__/{$data.face209}"<else/>src="__PUBLIC__/Default/images/no_image.jpg"</if> >
                                   </div>
-                                  <div class="col-sm-7" style="margin-top:60px;">
+                                  <div class="col-sm-7" style="margin-top:20px;">
                                       <input type="file" name="face" id="upload" />
                                       <p class="help-block no-margin">格式：jpg、jpeg、gif、png 尺寸：210*115/px</p>
                                   </div>

@@ -32,6 +32,20 @@ class BaseController extends Controller {
         $arr = $this->_upload('news/', $thumb);
         echo json_encode($arr);
     }
+
+    //文章封面
+    public function uploadArticleFace () {
+        //缩略图尺寸
+        $thumb = array(
+            'face200'  => array(200, 230),
+            'face368'  => array(368, 276),
+            'face208'  => array(208, 156),
+            'face258'  => array(258, 341),
+            'face255'  => array(255, 256)
+        );
+        $arr = $this->_upload('article/', $thumb);
+        echo json_encode($arr);
+    }
     /**
      * 新闻图片
      */
@@ -39,7 +53,7 @@ class BaseController extends Controller {
         $thumb = [
             'face245' => [245, 115]
         ];
-        $arr =$this->_upload('enterprise/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        $arr =$this->_upload('enterprise/', $thumb);
         echo json_encode($arr);
     }
      /**
@@ -63,7 +77,7 @@ class BaseController extends Controller {
                 echo json_encode(['status' => 0]);
                 break;
         }
-        $arr =$this->_upload('ad/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        $arr =$this->_upload('ad/', $thumb);
         echo json_encode($arr);
     }
 
@@ -85,7 +99,7 @@ class BaseController extends Controller {
                 echo json_encode(['status' => 0]);
                 break;
         }
-        $arr =$this->_upload('ad/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        $arr =$this->_upload('ad/', $thumb);
         echo json_encode($arr);
     }
 
@@ -98,7 +112,7 @@ class BaseController extends Controller {
                 'face520' => [520, 290],
                 'face40'  => [40, 40]
         ];
-        $arr =$this->_upload('theater/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        $arr =$this->_upload('theater/', $thumb);
         echo json_encode($arr);
     }
     /**
@@ -113,7 +127,7 @@ class BaseController extends Controller {
         $thumb = [
             'path' => [350, 250],
         ];
-        $arr =$this->_upload('theater/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        $arr =$this->_upload('theater/', $thumb);
         if ($arr) {
             $data = [
                 'theater_id' => $theater_id,
@@ -137,7 +151,7 @@ class BaseController extends Controller {
                 'face40'  => [40, 40],
                 'face160' => [160, 181]
             ];
-        $arr =$this->_upload('movieFace/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        $arr =$this->_upload('movieFace/', $thumb);
         echo json_encode($arr);
     }
      /**
@@ -149,7 +163,7 @@ class BaseController extends Controller {
                 'face157' => [157, 224],
                 'face240'  => [240, 360]
             ];
-        $arr =$this->_upload('kanwuFace/', $thumb, \Think\Image::IMAGE_THUMB_FIXED);
+        $arr =$this->_upload('kanwuFace/', $thumb);
         echo json_encode($arr);
     }
     /**
@@ -181,7 +195,7 @@ class BaseController extends Controller {
      *  IMAGE_THUMB_FIXED     =   6 ; //固定尺寸缩放类型
      * @return Array 图片上传信息
      */
-    private function _upload($path,$thumb=array(), $method = \Think\Image::IMAGE_THUMB_SCALE) {
+    private function _upload($path,$thumb=array(), $method = \Think\Image::IMAGE_THUMB_CENTER) {
         $obj = new \Think\Upload();// 实例化上传类
         $obj->maxSize = C('UPLOAD_MAX_SIZE') ;// 设置附件上传大小
         $obj->rootPath=C('UPLOAD_PATH');

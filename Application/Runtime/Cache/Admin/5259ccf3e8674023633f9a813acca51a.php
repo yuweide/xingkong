@@ -212,7 +212,7 @@
                            
                             <a href="javascript:;">
                                 <i class="fa fa-play"></i>
-                                <span>电影管理</span>
+                                <span>影视管理</span>
                             </a>
                              <ul class="dropdown-menu">
                                 <li>
@@ -230,7 +230,7 @@
                         </li>
                         <li class="dropdown show-on-hover <?php if((strtolower(CONTROLLER_NAME)) == "news"): ?>active<?php endif; ?>">
                             <a href="javascript:;" data-toggle="dropdown">
-                                <i class="fa fa-file"></i>
+                                <i class="fa fa-dribbble"></i>
                                 <span>新闻管理</span>
                             </a>
                             <ul class="dropdown-menu">
@@ -242,6 +242,35 @@
                                 <li>
                                     <a href="<?php echo U('News/index');?>">
                                         <span>新闻列表</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown show-on-hover <?php if(in_array(strtolower(CONTROLLER_NAME), ['kanwu', 'article'])): ?>active<?php endif; ?>">
+                            <a href="javascript:;" data-toggle="dropdown">
+                                <i class="fa fa-file"></i>
+                                <span>广电报</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="<?php echo U('Kanwu/add');?>">
+                                        <span>添加刊物</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Kanwu/index');?>">
+                                        <span>刊物列表</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Article/add');?>">
+                                        <span>添加文章</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Article/index');?>">
+                                        <span>文章列表</span>
                                     </a>
                                 </li>
                             </ul>
@@ -264,11 +293,11 @@
                                     </a>
                                 </li>
 
-                                <li>
+                                <!-- <li>
                                     <a href="<?php echo U('AdManage/index', ['pos' => 3]);?>">
                                         <span>广电报广告位</span>
                                     </a>
-                                </li>
+                                </li> -->
                                 
                             </ul>
                         </li>
@@ -407,7 +436,7 @@
 	                              <div class="col-sm-offset-2 col-sm-8">
 	                                  <div class="checkbox">
 	                                      <label>
-	                                          <input type="checkbox" name="recommend" value="<?php echo ($data["recommend"]); ?>" <?php if($data['recommend'] == 1): ?>checked<?php endif; ?>>推荐
+	                                          <input type="checkbox" name="recommend" value="1" <?php if($data['recommend'] == 1): ?>checked<?php endif; ?>>推荐
 	                                      </label>
 	                                  </div>
 	                              </div>
@@ -419,7 +448,7 @@
                                   <div class="col-sm-3">
                                   	<img id="no-image"<?php if($data['face209']): ?>src="/xingkong/<?php echo ($data["face209"]); ?>"<?php else: ?>src="/xingkong/Public/Default/images/no_image.jpg"<?php endif; ?> >
                                   </div>
-                                  <div class="col-sm-7" style="margin-top:60px;">
+                                  <div class="col-sm-7" style="margin-top:20px;">
                                       <input type="file" name="face" id="upload" />
                                       <p class="help-block no-margin">格式：jpg、jpeg、gif、png 尺寸：210*115/px</p>
                                   </div>

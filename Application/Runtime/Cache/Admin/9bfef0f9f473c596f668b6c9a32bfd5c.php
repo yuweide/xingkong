@@ -406,7 +406,7 @@
                                         <a href="#profile" data-toggle="tab">新闻类别</a>
                                     </li>
                                     <li>
-                                        <a href="#kanwu" data-toggle="tab">广电报类别</a>
+                                        <a href="#kanwu" data-toggle="tab">广电报文章类别</a>
                                     </li> 
                                 </ul>
                                 <section class="panel">

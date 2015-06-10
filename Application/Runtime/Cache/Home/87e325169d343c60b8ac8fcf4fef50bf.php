@@ -81,7 +81,7 @@
         <ul>
         	<?php if(is_array($recommend)): foreach($recommend as $key=>$v): ?><li>
 		      		<div class="all_12_r1l"><a href="<?php echo U('Movie/play', ['id' => $v['id']]);?>"><img src="/xingkong/<?php echo ($v["face142"]); ?>" width="142" height="81" /></a></div>
-            		<div class="all_12_r1r"><?php echo ($v["name"]); ?></div>
+            		<div class="all_12_r1r" style="line-height:20px;"><a href="<?php echo U('Movie/play', ['id' => $v['id']]);?>"><?php echo ($v["name"]); ?></a></div>
 		         </li><?php endforeach; endif; ?>
         </ul>
       </div>
@@ -116,7 +116,6 @@
     <h1>影评</h1>
     <div class="all_151">
     	<form>
-	    	 <!-- <img src="/xingkong/Public/Home/images/38.png" width="1071" height="128" />  -->
 	    	 <textarea name="content" rows="1"  id="ue-content"></textarea>
 	    	 <input type="hidden" value="<?php echo ($data["id"]); ?>" name="id">
 	    	 <input type="image" src="/xingkong/Public/Home/images/btn.jpg" style="float:right; margin-right:30px; margin-top:10px;">
@@ -179,7 +178,7 @@
 	var swf = "/xingkong/Public/Plugin/Cuplay/CuPlayerMiniV4.swf";
 	var flv = "/xingkong/<?php echo ($data["url"]); ?>";
 	var php = "/xingkong/Public/Plugin/Cuplay/CuPlayerSetFile.php";
-	var start = "/xingkong/Public/Plugin/Cuplay/images/start.jpg";
+	var start = "/xingkong/Public/Plugin/Cuplay/images/load.gif";
 	var so = new SWFObject(swf,"CuPlayerV4","752","454","9","#000000");
 	so.addParam("allowfullscreen","true");
 	so.addParam("allowscriptaccess","always");

@@ -31,24 +31,23 @@
         <div class="clear"></div>
       </div>
       <div class="all_1l_2">
-        <div class="all_1l_2l"><img src="__PUBLIC__/Home/Images/43.png" width="368" height="276" />
-          <p><a href="#"><strong>陈凯歌"完成穿越回归人家"</strong></a></p>
-          <p>由新丽传媒、21世纪盛凯影业出品，陈凯歌导演，高圆圆、姚晨、赵又廷、陈红、王学圻、王珞丹、陈燃、张译主演的当代都市题材电影</p>
+        <div class="all_1l_2l">
+          <a href="{:U('Kanwu/detail', ['id' => $dsdy_hot['id']])}">
+            <img src="__ROOT__/{$dsdy_hot.face368}" width="368" height="276" />
+          </a>
+          <p><a href="{:U('Kanwu/detail', ['id' => $dsdy_hot['id']])}"><strong>{$dsdy_hot.title}</strong></a></p>
+          <p>{$dsdy_hot.desc}</p>
         </div>
         <div class="all_1l_2r">
           <ul>
-            <li> <img src="__PUBLIC__/Home/Images/44.png" width="208" height="156" />
-              <p><a href="#">陈凯歌"完成穿越回归人间"</a></p>
-            </li>
-            <li> <img src="__PUBLIC__/Home/Images/44.png" width="208" height="156" />
-              <p><a href="#">陈凯歌"完成穿越回归人间"</a></p>
-            </li>
-            <li> <img src="__PUBLIC__/Home/Images/44.png" width="208" height="156" />
-              <p><a href="#">陈凯歌"完成穿越回归人间"</a></p>
-            </li>
-            <li> <img src="__PUBLIC__/Home/Images/44.png" width="208" height="156" />
-              <p><a href="#">陈凯歌"完成穿越回归人间"</a></p>
-            </li>
+            <foreach name="dsdy" item="v">
+              <li> 
+                <a href="{:U('Kanwu/detail', ['id' => $v['id']])}">
+                  <img src="__ROOT__/{$v.face208}" width="208" height="156" />
+                  <p>{$v.title|mb_substr=###, 0, 11, 'UTF-8'}...</p>
+                </a>
+              </li>
+            </foreach>
           </ul>
         </div>
       </div>
@@ -75,13 +74,20 @@
   </div>
   <div class="all_2">
     <div class="all_21">
-      <div class="all_21_l "><strong>娱乐时尚</strong>TV&amp;MOVIE</div>
+      <div class="all_21_l "><strong>娱乐时尚</strong>FASHION</div>
       <div class="all_21_r ">MORE+</div>
       <div class="clear"></div>
     </div>
     <div class="all_22">
-    <ul><li><img src="__PUBLIC__/Home/Images/47.png" width="258" height="341" /><span>明星机场装 大气简约范儿足够了</span></li><li><img src="__PUBLIC__/Home/Images/47.png" width="258" height="341" /><span>明星机场装 大气简约范儿足够了</span></li><li><img src="__PUBLIC__/Home/Images/47.png" width="258" height="341" /><span>明星机场装 大气简约范儿足够了</span></li><li><img src="__PUBLIC__/Home/Images/47.png" width="258" height="341" /><span>明星机场装 大气简约范儿足够了</span></li>
-    </ul></div>
+    <ul>
+        <foreach name="ylss" item="v">
+          <li> 
+            <a href="{:U('Kanwu/detail', ['id' => $v['id']])}">
+              <img src="__ROOT__/{$v.face258}" width="258" height="341" />
+            </a>
+              <span>{$v.title|mb_substr=###, 0, 14, 'UTF-8'}</span>
+          </li>
+        </foreach>
   </div>
   
   <DIV class="all_3">
@@ -92,22 +98,24 @@
     </div>
     
     <div class="all_22">
-    <ul><li><img src="__PUBLIC__/Home/Images/47.png" width="258" height="341" /></li><li><img src="__PUBLIC__/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li><li><img src="__PUBLIC__/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li><li><img src="__PUBLIC__/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li>
+    <ul>
+    <li>
+      <img src="__PUBLIC__/Home/Images/health.jpg" width="258" height="341" />
+    </li>
+    <foreach name="jk" item="v">
+      <li> 
+        <a href="{:U('Kanwu/detail', ['id' => $v['id']])}">
+          <img src="__ROOT__/{$v.face255}" width="255" height="256" />
+          <p>
+            <strong>{$v.title|mb_substr=###, 0, 14, 'UTF-8'}</strong>
+          </p>
+          <p>
+            {$v.desc|mb_substr=###, 0, 40, 'UTF-8'}
+          </p>
+        </a>
+      </li>
+    </foreach>
+
     </ul></div>
     </DIV><DIV class="all_3">
   <div class="all_21">
@@ -116,24 +124,27 @@
       <div class="clear"></div>
     </div>
     
+    
     <div class="all_22">
-    <ul><li><img src="__PUBLIC__/Home/Images/47.png" width="258" height="341" /></li><li><img src="__PUBLIC__/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li><li><img src="__PUBLIC__/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li><li><img src="__PUBLIC__/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li>
-    </ul></div>
+      <ul>
+        <li><img src="__PUBLIC__/Home/Images/food.jpg" width="258" height="341" /></li>
+        <foreach name="ms" item="v">
+          <li> 
+            <a href="{:U('Kanwu/detail', ['id' => $v['id']])}">
+              <img src="__ROOT__/{$v.face255}" width="255" height="256" />
+              <p>
+                <strong>{$v.title|mb_substr=###, 0, 14, 'UTF-8'}</strong>
+              </p>
+              <p>
+                {$v.desc|mb_substr=###, 0, 40, 'UTF-8'}
+              </p>
+            </a>
+          </li>
+        </foreach>
+   
+     
+      </ul>
+    </div>
     </DIV>
   <div class="clear"></div>
 </div>

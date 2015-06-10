@@ -247,7 +247,7 @@
                             </ul>
                         </li>
 
-                        <li class="dropdown show-on-hover <?php if((strtolower(CONTROLLER_NAME)) == "kanwu"): ?>active<?php endif; ?>">
+                        <li class="dropdown show-on-hover <?php if(in_array(strtolower(CONTROLLER_NAME), ['kanwu', 'article'])): ?>active<?php endif; ?>">
                             <a href="javascript:;" data-toggle="dropdown">
                                 <i class="fa fa-file"></i>
                                 <span>广电报</span>
@@ -264,8 +264,13 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo U('Kanwu/index');?>">
-                                        <span>文章管理</span>
+                                    <a href="<?php echo U('Article/add');?>">
+                                        <span>添加文章</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Article/index');?>">
+                                        <span>文章列表</span>
                                     </a>
                                 </li>
                             </ul>
@@ -417,7 +422,7 @@
 	                                  <label for="inputEmail4" class="col-sm-2 control-label"><span class="red">* </span>上传视频</label>
 	                                  <div class="col-sm-8">
 	                                      <input type="file" name="dedio" id="upload-movie" />
-	                                      <p class="help-block no-margin">格式：flv</p>
+	                                      <p class="help-block no-margin">格式：flv，mp4</p>
 	                                  </div>
                             	  </div>
                                   <label class="col-sm-2 control-label"><span class="red">* </span>类别</label>
@@ -553,7 +558,7 @@
 		      'width'         :    "120",
 		      'height'        :    "30",
 		      'fileTypeDesc'  :    "Image file",
-		      'fileTypeExts'  :    "*.flv",
+		      'fileTypeExts'  :    "*.flv;*.mp4;",
 		      'formData'      :    {"session_id"  : sid},
 		      'multi'         :     false,
 		      'removeTimeout' :     1,

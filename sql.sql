@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `cns_xingkong`.`cns_category` (
   `id` INT(11)  NOT NULL AUTO_INCREMENT COMMENT '主键，自增',
   `name` VARCHAR(32) NOT NULL DEFAULT '' COMMENT '类别名称',
   `sort` INT(11) NOT NULL DEFAULT 0 COMMENT '排序',
-  `type` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '类型：1=新闻，2=影视',
+  `type` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '类型：1=新闻，2=影视，3=广电报文章类型',
   `status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1 COMMENT '1=正常，0=停用',
   `remark` varchar(255) NOT NULL DEFAULT '' COMMENT '备注',
   PRIMARY KEY (`id`)
@@ -44,6 +44,30 @@ CREATE TABLE IF NOT EXISTS `cns_xingkong`.`cns_news` (
   `create_time` INT(11) NOT NULL DEFAULT 0 COMMENT '发布日期',
   `face200` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '文章封面200*230px',
   `face80` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '文章封面80*90px',
+  `desc` VARCHAR(500)  NOT NULL DEFAULT '' COMMENT '描述',
+  `content` TEXT NOT NULL DEFAULT '' COMMENT '文章内容',
+  `hot` tinyint(1) NOT NULL DEFAULT 0 COMMENT '热点新闻1=热点新闻，0=非热点新闻',
+  `status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1 COMMENT '1=正常，0=停用',
+  PRIMARY KEY (`id`)
+)  ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- -----------------------------------------------------
+-- Table `cns_xingkong`.`cns_article`
+-- -----------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `cns_xingkong`.`cns_article` (
+  `id` INT(11)  NOT NULL AUTO_INCREMENT COMMENT '主键，自增',
+  `title` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '标题',
+  `sort` INT(11) NOT NULL DEFAULT 0 COMMENT '排序',
+  `cate_id` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '类别id',
+  `editor` VARCHAR(32) NOT NULL DEFAULT '' COMMENT '编辑',
+  `from` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '来源',
+  `create_time` INT(11) NOT NULL DEFAULT 0 COMMENT '发布日期',
+  `face200` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '文章封面200*230px',
+  `face368` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '文章封面368*276px',
+  `face208` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '文章封面208*156px',
+  `face258` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '文章封面258*341px',
+  `face255` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '文章封面255*256px',
   `desc` VARCHAR(500)  NOT NULL DEFAULT '' COMMENT '描述',
   `content` TEXT NOT NULL DEFAULT '' COMMENT '文章内容',
   `hot` tinyint(1) NOT NULL DEFAULT 0 COMMENT '热点新闻1=热点新闻，0=非热点新闻',

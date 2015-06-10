@@ -236,7 +236,7 @@
                             </ul>
                         </li>
 
-                        <li class="dropdown show-on-hover <?php if((strtolower(CONTROLLER_NAME)) == "kanwu"): ?>active<?php endif; ?>">
+                        <li class="dropdown show-on-hover <?php if(in_array(strtolower(CONTROLLER_NAME), ['kanwu', 'article'])): ?>active<?php endif; ?>">
                             <a href="javascript:;" data-toggle="dropdown">
                                 <i class="fa fa-file"></i>
                                 <span>广电报</span>
@@ -253,7 +253,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo U('Kanwu/index');?>">
+                                    <a href="<?php echo U('Article/add');?>">
+                                        <span>添加管理</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Article/index');?>">
                                         <span>文章管理</span>
                                     </a>
                                 </li>

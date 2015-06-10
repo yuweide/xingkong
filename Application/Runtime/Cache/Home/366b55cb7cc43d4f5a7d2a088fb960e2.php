@@ -90,24 +90,21 @@
         <div class="clear"></div>
       </div>
       <div class="all_1l_2">
-        <div class="all_1l_2l"><img src="/xingkong/Public/Home/Images/43.png" width="368" height="276" />
-          <p><a href="#"><strong>陈凯歌"完成穿越回归人家"</strong></a></p>
-          <p>由新丽传媒、21世纪盛凯影业出品，陈凯歌导演，高圆圆、姚晨、赵又廷、陈红、王学圻、王珞丹、陈燃、张译主演的当代都市题材电影</p>
+        <div class="all_1l_2l">
+          <a href="<?php echo U('Kanwu/detail', ['id' => $dsdy_hot['id']]);?>">
+            <img src="/xingkong/<?php echo ($dsdy_hot["face368"]); ?>" width="368" height="276" />
+          </a>
+          <p><a href="<?php echo U('Kanwu/detail', ['id' => $dsdy_hot['id']]);?>"><strong><?php echo ($dsdy_hot["title"]); ?></strong></a></p>
+          <p><?php echo ($dsdy_hot["desc"]); ?></p>
         </div>
         <div class="all_1l_2r">
           <ul>
-            <li> <img src="/xingkong/Public/Home/Images/44.png" width="208" height="156" />
-              <p><a href="#">陈凯歌"完成穿越回归人间"</a></p>
-            </li>
-            <li> <img src="/xingkong/Public/Home/Images/44.png" width="208" height="156" />
-              <p><a href="#">陈凯歌"完成穿越回归人间"</a></p>
-            </li>
-            <li> <img src="/xingkong/Public/Home/Images/44.png" width="208" height="156" />
-              <p><a href="#">陈凯歌"完成穿越回归人间"</a></p>
-            </li>
-            <li> <img src="/xingkong/Public/Home/Images/44.png" width="208" height="156" />
-              <p><a href="#">陈凯歌"完成穿越回归人间"</a></p>
-            </li>
+            <?php if(is_array($dsdy)): foreach($dsdy as $key=>$v): ?><li> 
+                <a href="<?php echo U('Kanwu/detail', ['id' => $v['id']]);?>">
+                  <img src="/xingkong/<?php echo ($v["face208"]); ?>" width="208" height="156" />
+                  <p><?php echo (mb_substr($v["title"], 0, 11, 'UTF-8')); ?>...</p>
+                </a>
+              </li><?php endforeach; endif; ?>
           </ul>
         </div>
       </div>
@@ -134,13 +131,18 @@
   </div>
   <div class="all_2">
     <div class="all_21">
-      <div class="all_21_l "><strong>娱乐时尚</strong>TV&amp;MOVIE</div>
+      <div class="all_21_l "><strong>娱乐时尚</strong>FASHION</div>
       <div class="all_21_r ">MORE+</div>
       <div class="clear"></div>
     </div>
     <div class="all_22">
-    <ul><li><img src="/xingkong/Public/Home/Images/47.png" width="258" height="341" /><span>明星机场装 大气简约范儿足够了</span></li><li><img src="/xingkong/Public/Home/Images/47.png" width="258" height="341" /><span>明星机场装 大气简约范儿足够了</span></li><li><img src="/xingkong/Public/Home/Images/47.png" width="258" height="341" /><span>明星机场装 大气简约范儿足够了</span></li><li><img src="/xingkong/Public/Home/Images/47.png" width="258" height="341" /><span>明星机场装 大气简约范儿足够了</span></li>
-    </ul></div>
+    <ul>
+        <?php if(is_array($ylss)): foreach($ylss as $key=>$v): ?><li> 
+            <a href="<?php echo U('Kanwu/detail', ['id' => $v['id']]);?>">
+              <img src="/xingkong/<?php echo ($v["face258"]); ?>" width="258" height="341" />
+            </a>
+              <span><?php echo (mb_substr($v["title"], 0, 14, 'UTF-8')); ?></span>
+          </li><?php endforeach; endif; ?>
   </div>
   
   <DIV class="all_3">
@@ -151,22 +153,22 @@
     </div>
     
     <div class="all_22">
-    <ul><li><img src="/xingkong/Public/Home/Images/47.png" width="258" height="341" /></li><li><img src="/xingkong/Public/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li><li><img src="/xingkong/Public/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li><li><img src="/xingkong/Public/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li>
+    <ul>
+    <li>
+      <img src="/xingkong/Public/Home/Images/health.jpg" width="258" height="341" />
+    </li>
+    <?php if(is_array($jk)): foreach($jk as $key=>$v): ?><li> 
+        <a href="<?php echo U('Kanwu/detail', ['id' => $v['id']]);?>">
+          <img src="/xingkong/<?php echo ($v["face255"]); ?>" width="255" height="256" />
+          <p>
+            <strong><?php echo (mb_substr($v["title"], 0, 14, 'UTF-8')); ?></strong>
+          </p>
+          <p>
+            <?php echo (mb_substr($v["desc"], 0, 40, 'UTF-8')); ?>
+          </p>
+        </a>
+      </li><?php endforeach; endif; ?>
+
     </ul></div>
     </DIV><DIV class="all_3">
   <div class="all_21">
@@ -175,24 +177,25 @@
       <div class="clear"></div>
     </div>
     
+    
     <div class="all_22">
-    <ul><li><img src="/xingkong/Public/Home/Images/47.png" width="258" height="341" /></li><li><img src="/xingkong/Public/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li><li><img src="/xingkong/Public/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li><li><img src="/xingkong/Public/Home/Images/49.png" width="255" height="256" /><p>
-    
- <strong>晚睡晚起不利于身体健康</strong>
-    </p>
-      <p>
-    人要根据四季变化来调整自己的作息，顺应自然，能够改善睡眠质量，起到很好的养生作。如</p></li>
-    </ul></div>
+      <ul>
+        <li><img src="/xingkong/Public/Home/Images/food.jpg" width="258" height="341" /></li>
+        <?php if(is_array($ms)): foreach($ms as $key=>$v): ?><li> 
+            <a href="<?php echo U('Kanwu/detail', ['id' => $v['id']]);?>">
+              <img src="/xingkong/<?php echo ($v["face255"]); ?>" width="255" height="256" />
+              <p>
+                <strong><?php echo (mb_substr($v["title"], 0, 14, 'UTF-8')); ?></strong>
+              </p>
+              <p>
+                <?php echo (mb_substr($v["desc"], 0, 40, 'UTF-8')); ?>
+              </p>
+            </a>
+          </li><?php endforeach; endif; ?>
+   
+     
+      </ul>
+    </div>
     </DIV>
   <div class="clear"></div>
 </div>

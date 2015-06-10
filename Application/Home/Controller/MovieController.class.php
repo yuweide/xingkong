@@ -24,13 +24,8 @@ class MovieController extends BaseController{
         //草根原创 cate_id = 6
         $this->root = $model->where(['cate_id' => 6, 'status' => 1])->order('sort asc, id desc')->limit(8)->field('id,name,face196')->select();
         //推荐 recommend = 1,
-        $recommend = $model->where(['status' => 1, 'recommend' => 1])->order('sort asc, id desc')->limit(9)->field('id,name,face80')->select();
-        $count = count(recommend);
-        if ( $count < 9 ) {
-            $limit = 9-$count;
-            $addRec  = $model->where('status=1')->order('sort asc, id desc')->limit($limit)->field('id,name,face80')->select();
-            $recommend = array_merge($recommend, $addRec);
-        }
+        $recommend = $model->where(['status' => 1])->order('recommend desc, id desc')->limit(9)->field('id,name,face80')->select();
+    
         $this->recommend = $recommend;
         //相关动态
         $model = M('News');
@@ -86,15 +81,10 @@ class MovieController extends BaseController{
         $data = $model->where(['id' => $id])->find();
         $this->titleL1 = $data['name'];
         $this->data = $data;
-        //推荐 查找本类中推荐的电影， 不够的从本类中挑选
+        //推荐 查找本类中推荐的电影 优选选择推荐的视频
         $cid = $data['cate_id'];
-        $recommend = $model->where(['cate_id' => $cid, 'status' => 1])->order('sort asc, id desc')->limit(4)->field('id,name,face142')->select();
-        $count = count($recommend);
-        if ( $count < 4 ) {
-            $limit = 4-$count;
-            $addRec  = $model->where('status=1')->order('sort asc, id desc')->limit($limit)->field('id,name,face142')->select();
-            $recommend = array_merge($recommend, $addRec);
-        }
+        $recommend = $model->where(['cate_id' => $cid, 'status' => 1])->order('recommend desc, id desc')->limit(4)->field('id,name,face142')->select();
+       
         $this->recommend = $recommend;
         //更多视频
         $this->more = $model->where(['cid' => $data['cid'], 'id' => ['neq',$data['id']]])->order('sort asc, id desc')->limit(6)->field('id, name, face96')->select();

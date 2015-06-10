@@ -45,9 +45,9 @@ class NewsController extends BaseController {
         $model->create();
         $model->create_time = $_SERVER['REQUEST_TIME'];
         $model->content = $_POST['content'];
-        if (!$model->title) $this->error('文章标题不能为空');
-        if (!$model->desc) $this->error('文章描述不能为空');
-        if (!$model->content) $this->error('文章内容不能为空');
+        if (!$model->title) $this->error('新闻标题不能为空');
+        if (!$model->desc) $this->error('新闻描述不能为空');
+        if (!$model->content) $this->error('新闻内容不能为空');
         if(!$model->add()) $this->error('添加失败，请重试');
         $this->success('添加成功！');
     }
@@ -69,9 +69,9 @@ class NewsController extends BaseController {
         $model = M('News');
         $model->create();
         $model->content = $_POST['content'];
-        if (!$model->title) $this->error('文章标题不能为空');
-        if (!$model->desc) $this->error('文章描述不能为空');
-        if (!$model->content) $this->error('文章内容不能为空');
+        if (!$model->title) $this->error('新闻标题不能为空');
+        if (!$model->desc) $this->error('新闻描述不能为空');
+        if (!$model->content) $this->error('新闻内容不能为空');
         if(!$model->save()) $this->error('修改失败，请重试');
         $this->success('修改成功！');
     }
