@@ -1,0 +1,1145 @@
+[ 2015-06-11T00:06:11+08:00 ] ::1 /xingkong/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+
+[ 2015-06-11T00:06:11+08:00 ] ::1 /xingkong/Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2015-06-11T00:06:14+08:00 ] ::1 /xingkong/Admin/Login/handle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `cns_manger` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`login`,`password`,`status` FROM `cns_manger` WHERE `login` = 'cns' LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `cns_manger` SET `last_login_time`='1433952374',`last_login_ip`='0' WHERE `id` = 1 [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2015-06-11T00:06:14+08:00 ] ::1 /xingkong/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: titleL2 /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2015-06-11T00:06:20+08:00 ] ::1 /xingkong/Admin/News/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2015-06-11T00:06:21+08:00 ] ::1 /xingkong/Admin/News/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`desc`,`create_time`,`editor`,`face200`,`cate_id` FROM `cns_news` WHERE `status` = 1 ORDER BY sort LIMIT 0,15   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2015-06-11T00:06:23+08:00 ] ::1 /xingkong/Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`desc`,`create_time`,`editor`,`face200`,`cate_id` FROM `cns_news` WHERE `status` = 1 ORDER BY sort LIMIT 0,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2015-06-11T00:06:27+08:00 ] ::1 /xingkong/Admin/News/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0091s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2015-06-11T00:06:28+08:00 ] ::1 /xingkong/Admin/News/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`desc`,`create_time`,`editor`,`face200`,`cate_id` FROM `cns_news` WHERE `status` = 1 ORDER BY sort LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000604s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000892s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007224s ]
+
+[ 2015-06-11T00:09:54+08:00 ] ::1 /xingkong/Admin/News/addHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002857s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0085s ]
+SQL: INSERT INTO `cns_news` (`cate_id`,`title`,`desc`,`content`,`hot`,`editor`,`sort`,`from`,`face200`,`face80`,`create_time`) VALUES ('1','农村学生写&quot;高速路上违章&quot;作文:从未见过高速路','这位自称来自陕西阎良的农村学生自曝家事，痛诉自己“看到材料后，不知道如何提笔写信”。原来，今年陕西省高考试题采用新课标全国卷Ⅰ，作文题目大意是，女大学生举报在高速路上违反交规的父亲引发争议，考生可给女儿、父亲或其他相关方写一封信。','<p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">今年高考期间，一封写给高考命题老师的信，意外蹿红网络。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">这位自称来自陕西阎良的农村学生自曝家事，痛诉自己“看到材料后，不知道如何提笔写信”。原来，今年陕西省高考试题采用新课标全国卷Ⅰ，作文题目大意是，女大学生举报在高速路上违反交规的父亲引发争议，考生可给女儿、父亲或其他相关方写一封信。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">网络上流传的这封信里写道：“尊敬的老师，高速公路对我而言，也只是电视上、报纸上和书本上的事。我走过的路只有乡间小道，最好的路也只是镇里的马路……第一次听到高速公路这个词语后，我曾经幻想有一天，我能够带着父亲一起走在那样的路上，宽阔平坦。但截止到现在，截止到我写这封信，我仍然没有目睹过‘她’的芳容……父亲，一个一辈子只和土地打交道的质朴农民，他怎么会有车呢？当然，他有车，那个爷爷手里就有的架子车。”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">这封信为何会引爆网络情绪？击中了高考命题的哪些痛点？如何反思目前的高考命题“城市化倾向”？为此，中国青年报记者采访了多位基层一线的教师以及专家学者。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\"><strong>命题者忽略了农村学生的认知感受</strong></p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">甘肃省临洮县教育局教研室主任崔浩很早注意到了这封信引发的网络争论。他认为，“语文高考作文分值高，占比大，这样的作文题目对农村学生肯定有影响，农村学生没有这样的生活阅历，答题就无法具象，对他们来说，有失公平。”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">“命题者忽略了农村学生的认知感受，没有考虑到生活经历对学生的影响。”崔浩说。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">这位曾在中学任教11年的语文老师注意到，近年来，高考作文一直在倡导创新，但“似乎陷入了一种歧途，出题有点偏，有点怪”。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">在崔浩看来，高考作文应该坚持倡导生活化，鼓励学生写出有真情实感的文章。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">同时，崔浩建议，每年的高考命题应该多吸纳一些中学教学一线教师的建议，甚至鼓励中学一线教师参与命题，“更好地捕捉考生的心理”。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">无独有偶。接受记者采访时，兰州大学附属中学语文老师张平同样认为，高考命题目前都是由大学教授以及科研单位的专家参与，而没有中学教师参加，导致命题和学生的实际生活存在脱节现象。他注意到，近年来实施电脑阅卷后，高考语文卷难出高分，“阅卷老师给出的分值差距不大，否则影响阅卷进度”。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">“高考作文题目应该强调贴近学生的生活，不应该一味追社会热点，而全国卷的这个题目本身有点假大空，人为地制造了情和理的割裂，主题先行的色彩非常明显。”张平说。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">张平认为，高考作文题争论的背后，实际反映的是教育资源的不均衡。“采取一刀切的办法，本来农村学生就不占优势，命题再有倾向性，对农村孩子来说不公平。”张平说。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\"><strong>信息化社会，不熟悉城市生活不应成为学生的认知障碍</strong></p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">“我看这个阎良娃的信完全可能是虚构的。”河南的媒体人张先生旗帜鲜明地反对考题对农村生不利的观点。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">昨天下午，这封陕西阎良考生的信，经过翻版改造，出现了甘肃会宁版的，河南商丘版的，高二小版的，结尾都推介了自己的家乡，最终阅读量都超过了10万。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">从数字可以看出，高考命题对农村考生是否公平这一话题，很容易刺痛人们的神经。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">“为农村学生呼吁非常需要，但要警惕非理性的、追求转发率的做法。甘肃会宁考生今年根本没考‘高速路打电话’作文，怎么也写了这封信？”张先生从小在农村长大，他认为转发的人未必了解农村、了解农村的中学生，“别忘了现在的考生是95后，现在是网吧遍布的时代！”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">有不少人赞同张先生的观点。有网友认为，这道高考作文题命题的重点不在于高速公路、小汽车，而是情与法的关系，从这道题扯到对农村考生不公平上有点牵强附会。“如果是让考生写一篇关于高速公路或者小轿车的说明文，那才是对农村考生不公平。”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">甘肃陇西县第二中学语文老师苏振亚则认为，“身处信息化社会，不管是城市学生不熟悉农村生活，还是农村学生不熟悉城市生活，都不应该成为学生的认知障碍。”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">在这位资深语文老师看来，这道全国高考作文题倡导遵守法治社会的规则意识，改变传统的陋习，贴合时代脉搏，是一道比较好的材料作文题。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\"><strong>在制度设计时应充分考虑城乡差别的基本国情</strong></p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">记者采访的基层教师普遍认为，高考存在“城市化倾向”是一个不争的事实。在目前的现状下，英语和数学这两个科目，是农村考生与城里考生竞争的利器，而需要实验的物理、化学则成了农村孩子的短板。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">中国青年报记者注意到，近年来，教育界围绕基础教育课程改革存在城市化倾向这一问题一直争论不休。怎样在制度设计时充分考虑城乡差别的基本国情，以免造成新的不公平，是考验制度设计者的智慧。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">一封网上流传的信为什么引起那么大反响，一道高考题能有多大过错？“是长期以来二元社会的恶果，人们对农村教育积压下来的情绪。”有专家指出，在教育改革快速推进的同时，农村学校由于受经费、师资、环境等因素影响，对各种改革举措无法像城市学校一样落实到位，从而使得城乡教育差距进一步拉大，农村孩子在高考中越来越处于劣势。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">接受记者电话采访时，东北师范大学农村教育研究所所长邬志辉教授表示，“高考命题者心中应该有一个维度，要照顾到不同孩子的生活经验，尽量回避城市化的倾向。”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">在邬志辉教授看来，具体到出题的技术层面完全可以规避，“围绕情和法的关系，农村有农村的事，城市有城市的事，说的是一个理，事情是千差万别的。反过来问一下，就会好很多，完全可以是多元的”。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">“高考命题者应该认真反思。高考作文到底是要考查学生的什么呢？这是经验问题，而不是智力问题。城乡孩子的智力分布是一样的。”邬志辉说。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">今年5月在长春召开的“第三届中国农村教育论坛”上，与会高校、教育部门、研究机构共同发布了《长春共识》。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">《长春共识》呼吁，“农村教育应当既是田园的又是现代的，它不应是城市教育的简单复制。应该充分发掘农村教育的独特优势，让大自然成为农村教育的活教材，让生活成为农村教育的大课堂。”</p><p><br/></p>','1','admin','100','中青在线-中国青年报 作者：张鹏','','','1433952594') [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2015-06-11T00:09:55+08:00 ] ::1 /xingkong/Admin/News/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2015-06-11T00:09:56+08:00 ] ::1 /xingkong/Admin/News/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`desc`,`create_time`,`editor`,`face200`,`cate_id` FROM `cns_news` WHERE `status` = 1 ORDER BY sort LIMIT 0,15   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006669s ]
+
+[ 2015-06-11T00:09:58+08:00 ] ::1 /xingkong/Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0101s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`desc`,`create_time`,`editor`,`face200`,`cate_id` FROM `cns_news` WHERE `status` = 1 ORDER BY sort LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2015-06-11T00:11:09+08:00 ] ::1 /xingkong/Admin/News/edit/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0112s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cns_news` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2015-06-11T00:11:10+08:00 ] ::1 /xingkong/Admin/News/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000792s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002486s ]
+
+[ 2015-06-11T00:11:25+08:00 ] ::1 /xingkong/Admin/Base/uploadNewsFace
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/MAMP/htdocs/xingkong/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008600s ]
+
+[ 2015-06-11T00:11:31+08:00 ] ::1 /xingkong/Admin/News/editHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0016s ]
+SQL: UPDATE `cns_news` SET `cate_id`='1',`title`='农村学生写&quot;高速路上违章&quot;作文:从未见过高速路',`desc`='这位自称来自陕西阎良的农村学生自曝家事，痛诉自己“看到材料后，不知道如何提笔写信”。原来，今年陕西省高考试题采用新课标全国卷Ⅰ，作文题目大意是，女大学生举报在高速路上违反交规的父亲引发争议，考生可给女儿、父亲或其他相关方写一封信。',`content`='<p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">今年高考期间，一封写给高考命题老师的信，意外蹿红网络。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">这位自称来自陕西阎良的农村学生自曝家事，痛诉自己“看到材料后，不知道如何提笔写信”。原来，今年陕西省高考试题采用新课标全国卷Ⅰ，作文题目大意是，女大学生举报在高速路上违反交规的父亲引发争议，考生可给女儿、父亲或其他相关方写一封信。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">网络上流传的这封信里写道：“尊敬的老师，高速公路对我而言，也只是电视上、报纸上和书本上的事。我走过的路只有乡间小道，最好的路也只是镇里的马路……第一次听到高速公路这个词语后，我曾经幻想有一天，我能够带着父亲一起走在那样的路上，宽阔平坦。但截止到现在，截止到我写这封信，我仍然没有目睹过‘她’的芳容……父亲，一个一辈子只和土地打交道的质朴农民，他怎么会有车呢？当然，他有车，那个爷爷手里就有的架子车。”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">这封信为何会引爆网络情绪？击中了高考命题的哪些痛点？如何反思目前的高考命题“城市化倾向”？为此，中国青年报记者采访了多位基层一线的教师以及专家学者。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\"><strong>命题者忽略了农村学生的认知感受</strong></p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">甘肃省临洮县教育局教研室主任崔浩很早注意到了这封信引发的网络争论。他认为，“语文高考作文分值高，占比大，这样的作文题目对农村学生肯定有影响，农村学生没有这样的生活阅历，答题就无法具象，对他们来说，有失公平。”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">“命题者忽略了农村学生的认知感受，没有考虑到生活经历对学生的影响。”崔浩说。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">这位曾在中学任教11年的语文老师注意到，近年来，高考作文一直在倡导创新，但“似乎陷入了一种歧途，出题有点偏，有点怪”。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">在崔浩看来，高考作文应该坚持倡导生活化，鼓励学生写出有真情实感的文章。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">同时，崔浩建议，每年的高考命题应该多吸纳一些中学教学一线教师的建议，甚至鼓励中学一线教师参与命题，“更好地捕捉考生的心理”。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">无独有偶。接受记者采访时，兰州大学附属中学语文老师张平同样认为，高考命题目前都是由大学教授以及科研单位的专家参与，而没有中学教师参加，导致命题和学生的实际生活存在脱节现象。他注意到，近年来实施电脑阅卷后，高考语文卷难出高分，“阅卷老师给出的分值差距不大，否则影响阅卷进度”。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">“高考作文题目应该强调贴近学生的生活，不应该一味追社会热点，而全国卷的这个题目本身有点假大空，人为地制造了情和理的割裂，主题先行的色彩非常明显。”张平说。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">张平认为，高考作文题争论的背后，实际反映的是教育资源的不均衡。“采取一刀切的办法，本来农村学生就不占优势，命题再有倾向性，对农村孩子来说不公平。”张平说。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\"><strong>信息化社会，不熟悉城市生活不应成为学生的认知障碍</strong></p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">“我看这个阎良娃的信完全可能是虚构的。”河南的媒体人张先生旗帜鲜明地反对考题对农村生不利的观点。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">昨天下午，这封陕西阎良考生的信，经过翻版改造，出现了甘肃会宁版的，河南商丘版的，高二小版的，结尾都推介了自己的家乡，最终阅读量都超过了10万。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">从数字可以看出，高考命题对农村考生是否公平这一话题，很容易刺痛人们的神经。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">“为农村学生呼吁非常需要，但要警惕非理性的、追求转发率的做法。甘肃会宁考生今年根本没考‘高速路打电话’作文，怎么也写了这封信？”张先生从小在农村长大，他认为转发的人未必了解农村、了解农村的中学生，“别忘了现在的考生是95后，现在是网吧遍布的时代！”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">有不少人赞同张先生的观点。有网友认为，这道高考作文题命题的重点不在于高速公路、小汽车，而是情与法的关系，从这道题扯到对农村考生不公平上有点牵强附会。“如果是让考生写一篇关于高速公路或者小轿车的说明文，那才是对农村考生不公平。”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">甘肃陇西县第二中学语文老师苏振亚则认为，“身处信息化社会，不管是城市学生不熟悉农村生活，还是农村学生不熟悉城市生活，都不应该成为学生的认知障碍。”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">在这位资深语文老师看来，这道全国高考作文题倡导遵守法治社会的规则意识，改变传统的陋习，贴合时代脉搏，是一道比较好的材料作文题。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\"><strong>在制度设计时应充分考虑城乡差别的基本国情</strong></p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">记者采访的基层教师普遍认为，高考存在“城市化倾向”是一个不争的事实。在目前的现状下，英语和数学这两个科目，是农村考生与城里考生竞争的利器，而需要实验的物理、化学则成了农村孩子的短板。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">中国青年报记者注意到，近年来，教育界围绕基础教育课程改革存在城市化倾向这一问题一直争论不休。怎样在制度设计时充分考虑城乡差别的基本国情，以免造成新的不公平，是考验制度设计者的智慧。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">一封网上流传的信为什么引起那么大反响，一道高考题能有多大过错？“是长期以来二元社会的恶果，人们对农村教育积压下来的情绪。”有专家指出，在教育改革快速推进的同时，农村学校由于受经费、师资、环境等因素影响，对各种改革举措无法像城市学校一样落实到位，从而使得城乡教育差距进一步拉大，农村孩子在高考中越来越处于劣势。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">接受记者电话采访时，东北师范大学农村教育研究所所长邬志辉教授表示，“高考命题者心中应该有一个维度，要照顾到不同孩子的生活经验，尽量回避城市化的倾向。”</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">在邬志辉教授看来，具体到出题的技术层面完全可以规避，“围绕情和法的关系，农村有农村的事，城市有城市的事，说的是一个理，事情是千差万别的。反过来问一下，就会好很多，完全可以是多元的”。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">“高考命题者应该认真反思。高考作文到底是要考查学生的什么呢？这是经验问题，而不是智力问题。城乡孩子的智力分布是一样的。”邬志辉说。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">今年5月在长春召开的“第三届中国农村教育论坛”上，与会高校、教育部门、研究机构共同发布了《长春共识》。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; font-size: 14px; text-indent: 2em; color: rgb(37, 37, 37); font-family: 宋体, sans-serif; line-height: 24px; text-align: justify; white-space: normal; background-color: rgb(255, 255, 255);\">《长春共识》呼吁，“农村教育应当既是田园的又是现代的，它不应是城市教育的简单复制。应该充分发掘农村教育的独特优势，让大自然成为农村教育的活教材，让生活成为农村教育的大课堂。”</p><p><br/></p>',`hot`='1',`editor`='admin',`sort`='100',`from`='中青在线-中国青年报 作者：张鹏',`face200`='Upload/news/201506/face200557861ad36dc1.jpg',`face80`='Upload/news/201506/face80557861ad36dc1.jpg' WHERE `id` = 4 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2015-06-11T00:11:33+08:00 ] ::1 /xingkong/Admin/News/edit/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=1 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cns_news` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2015-06-11T00:11:33+08:00 ] ::1 /xingkong/Admin/News/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002931s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000710s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-06-11T00:11:35+08:00 ] ::1 /xingkong/Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0092s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`desc`,`create_time`,`editor`,`face200`,`cate_id` FROM `cns_news` WHERE `status` = 1 ORDER BY sort LIMIT 0,15   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2015-06-11T00:22:53+08:00 ] ::1 /xingkong/Admin/News/edit/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002403s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cns_news` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004915s ]
+
+[ 2015-06-11T00:22:55+08:00 ] ::1 /xingkong/Admin/News/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001582s ]
+
+[ 2015-06-11T00:24:33+08:00 ] ::1 /xingkong/Admin/Base/uploadNewsFace
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/MAMP/htdocs/xingkong/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2015-06-11T00:26:20+08:00 ] ::1 /xingkong/Admin/News/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000906s ]
+
+[ 2015-06-11T00:26:39+08:00 ] ::1 /xingkong/Admin/News/editHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0016s ]
+SQL: UPDATE `cns_news` SET `cate_id`='1',`title`='抽筋关键球!12年经典再现 LBJ生涯抽筋之战回顾',`desc`='今天骑士队5分险胜，勒布朗无疑是第一功臣，他在末节最关键时刻攻防两端都有出色表现，还是在已经出现抽筋症状的情况下，过去几年总决赛，这样的戏码勒布朗没有少演，而几乎每一次，他都没有让球队失望。',`content`='<p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">网易体育6月10日报道：</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">比赛还有4分09秒结束，<a href=\"http://nba.sports.163.com/team/5/\" style=\"color: rgb(15, 107, 153);\">骑士</a>队防守篮板发动快攻，<a href=\"http://nba.sports.163.com/player/531447/\" style=\"color: rgb(15, 107, 153);\">德拉维多瓦</a>为<a href=\"http://nba.sports.163.com/player/214152/\" style=\"color: rgb(15, 107, 153);\">勒布朗</a>送出高抛传球，詹皇不管不顾骑着退防到位的<a href=\"http://nba.sports.163.com/player/278317/\" style=\"color: rgb(15, 107, 153);\">汤普森</a>就是空接砸扣，这一球观赏程度爆棚，也让<a href=\"http://sports.163.com/keywords/9/9/9a9158eb/1.html\" title=\"骑士\" target=\"_blank\" style=\"color: rgb(15, 107, 153);\">骑士</a>队领先优势来到5分，可他退防过程中明显一瘸一拐，也不知是因为姿势不稳扭伤了脚踝，还是什么别的情况，勒布朗主动申请暂停，回到场边队医立刻上前为他按摩，前方消息很快报道：勒布朗这是抽筋了。</p><p><em style=\"display: inline-block; height: 400px; vertical-align: middle;\"></em><img src=\"http://img4.cache.netease.com/photo/0005/2015-06-10/600x450_AROD1UIL4TM10005.jpg\" id=\"photo129554\" style=\"vertical-align: middle; border: 0px; max-width: 100%; max-height: 100%; zoom: 1; display: inline; opacity: 1;\"/><br/></p><p><br/></p><p><span id=\"photoType129554\" class=\"nph_set_cur\" style=\"font-size: 14px; font-style: italic; font-family: geprgia, Georgia, sans-serif; padding: 10px 25px; float: left; color: rgb(77, 77, 77);\"><span class=\"nph_c_lh\" id=\"photoIndex129554\" style=\"font-size: 36px; color: rgb(204, 27, 27);\">9</span>/106</span></p><h2 style=\"padding: 20px 0px 0px; margin: 0px; font-size: 14px; min-height: 25px; font-stretch: normal; line-height: 1.4; font-family: sans-serif; border: none;\">勒布朗末节拼到抽筋。</h2><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">拼到抽筋，这种事儿对于勒布朗来说早就习惯了。今年东决面对<a href=\"http://nba.sports.163.com/team/1/\" style=\"color: rgb(15, 107, 153);\">老鹰</a>第三战的37分18个篮板13次助攻，加时赛里勒布朗就扭伤了脚踝，而且还出现了抽筋，当时他曾尝试申请暂停，最终还是顶住了身体的伤痛，加时赛最后37秒骑士队落后2分，勒布朗拖着一条腿连夺关键5分，护送骑士队顺利过关。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">过去几年在热火队，勒布朗也常经历关键时刻抽筋，2014年总决赛首战，马刺队球馆空调出现问题，在极为闷热的环境里勒布朗因为抽筋被抬下场，关键时刻无法出战，据说那场比赛开始前勒布朗服了7颗抗抽筋药，斯波尔斯特拉这样点评自己的爱将：联盟中99%的人都不会像他那样逼迫自己的身体，因为到了那个极限，整个身体都会是空的，但作为一个好胜心极强的球员，勒布朗却总在这样做。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">更著名的一战，是2012年的第四场，那一天维斯布鲁克狂轰43分，带着1-2落后的雷霆队疯狂反扑，比赛打到还有5分35秒结束，勒布朗突破上篮命中帮助热火队领先2分时他出现了抽筋症状，斯波尔斯特拉立刻用琼斯将其换下，杜兰特连拿4分，雷霆队最后4分钟完成反超。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\"><br/></p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">如果没有勒布朗，热火队赢球的几率将大大缩小，所以场边经过短暂调整，勒布朗重新回到了场上，最后2分51秒，勒布朗外线面对塞福罗萨防守，也许没人认为一名球员都抽筋了还能打出如何表现，偏偏勒布朗就是那个例外，他不管不顾直接三分出手，皮球刷网而过，热火队领先3分！</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">那场球赢下来之后，骑士队3-1领先，最终4-1淘汰雷霆队夺冠，勒布朗职业生涯第一次站上NBA的最高领奖台，开启了他的王者之路。时间回到现在，距离那一天已经是3年过去了，勒布朗变得更加强大，身体却更加容易疲劳，可这些，都无法掩盖他是这个星球上最强大球员的事实。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">此役过后，骑士队大比分2-1领先占据优势，如果骑士队最终战胜了<a href=\"http://sports.163.com/keywords/5/c/52c758eb/1.html\" title=\"勇士\" target=\"_blank\" style=\"color: rgb(15, 107, 153);\">勇士</a>队夺得总冠军，那么勒布朗在这个联盟中的统治地位，将不会再有人质疑。</p><p><br/></p>',`hot`='1',`editor`='admin',`sort`='100',`from`='',`face200`='Upload/news/201506/face200557864c156e32.jpg',`face80`='Upload/news/201506/face80557864c156e32.jpg' WHERE `id` = 1 [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2015-06-11T00:26:40+08:00 ] ::1 /xingkong/Admin/News/edit/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cns_news` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2015-06-11T00:26:41+08:00 ] ::1 /xingkong/Admin/News/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+
+[ 2015-06-11T00:27:19+08:00 ] ::1 /xingkong/Admin/News/editHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004549s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0102s ]
+SQL: UPDATE `cns_news` SET `cate_id`='1',`title`='抽筋关键球!12年经典再现 LBJ生涯抽筋之战回顾',`desc`='今天骑士队5分险胜，勒布朗无疑是第一功臣，他在末节最关键时刻攻防两端都有出色表现，还是在已经出现抽筋症状的情况下，过去几年总决赛，这样的戏码勒布朗没有少演，而几乎每一次，他都没有让球队失望。',`content`='<p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">网易体育6月10日报道：</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">比赛还有4分09秒结束，<a href=\"http://nba.sports.163.com/team/5/\" style=\"color: rgb(15, 107, 153);\">骑士</a>队防守篮板发动快攻，<a href=\"http://nba.sports.163.com/player/531447/\" style=\"color: rgb(15, 107, 153);\">德拉维多瓦</a>为<a href=\"http://nba.sports.163.com/player/214152/\" style=\"color: rgb(15, 107, 153);\">勒布朗</a>送出高抛传球，詹皇不管不顾骑着退防到位的<a href=\"http://nba.sports.163.com/player/278317/\" style=\"color: rgb(15, 107, 153);\">汤普森</a>就是空接砸扣，这一球观赏程度爆棚，也让<a href=\"http://sports.163.com/keywords/9/9/9a9158eb/1.html\" title=\"骑士\" target=\"_blank\" style=\"color: rgb(15, 107, 153);\">骑士</a>队领先优势来到5分，可他退防过程中明显一瘸一拐，也不知是因为姿势不稳扭伤了脚踝，还是什么别的情况，勒布朗主动申请暂停，回到场边队医立刻上前为他按摩，前方消息很快报道：勒布朗这是抽筋了。</p><p><em style=\"display: inline-block; height: 400px; vertical-align: middle;\"></em><img src=\"http://img4.cache.netease.com/photo/0005/2015-06-10/600x450_AROD1UIL4TM10005.jpg\" id=\"photo129554\" style=\"vertical-align: middle; border: 0px; max-width: 100%; max-height: 100%; zoom: 1; display: inline; opacity: 1;\"/><br/></p><p><br/></p><p><span id=\"photoType129554\" class=\"nph_set_cur\" style=\"font-size: 14px; font-style: italic; font-family: geprgia, Georgia, sans-serif; padding: 10px 25px; float: left; color: rgb(77, 77, 77);\"><span class=\"nph_c_lh\" id=\"photoIndex129554\" style=\"font-size: 36px; color: rgb(204, 27, 27);\">9</span>/106</span></p><h2 style=\"padding: 20px 0px 0px; margin: 0px; font-size: 14px; min-height: 25px; font-stretch: normal; line-height: 1.4; font-family: sans-serif; border: none;\">勒布朗末节拼到抽筋。</h2><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">拼到抽筋，这种事儿对于勒布朗来说早就习惯了。今年东决面对<a href=\"http://nba.sports.163.com/team/1/\" style=\"color: rgb(15, 107, 153);\">老鹰</a>第三战的37分18个篮板13次助攻，加时赛里勒布朗就扭伤了脚踝，而且还出现了抽筋，当时他曾尝试申请暂停，最终还是顶住了身体的伤痛，加时赛最后37秒骑士队落后2分，勒布朗拖着一条腿连夺关键5分，护送骑士队顺利过关。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">过去几年在热火队，勒布朗也常经历关键时刻抽筋，2014年总决赛首战，马刺队球馆空调出现问题，在极为闷热的环境里勒布朗因为抽筋被抬下场，关键时刻无法出战，据说那场比赛开始前勒布朗服了7颗抗抽筋药，斯波尔斯特拉这样点评自己的爱将：联盟中99%的人都不会像他那样逼迫自己的身体，因为到了那个极限，整个身体都会是空的，但作为一个好胜心极强的球员，勒布朗却总在这样做。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">更著名的一战，是2012年的第四场，那一天维斯布鲁克狂轰43分，带着1-2落后的雷霆队疯狂反扑，比赛打到还有5分35秒结束，勒布朗突破上篮命中帮助热火队领先2分时他出现了抽筋症状，斯波尔斯特拉立刻用琼斯将其换下，杜兰特连拿4分，雷霆队最后4分钟完成反超。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\"><br/></p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">如果没有勒布朗，热火队赢球的几率将大大缩小，所以场边经过短暂调整，勒布朗重新回到了场上，最后2分51秒，勒布朗外线面对塞福罗萨防守，也许没人认为一名球员都抽筋了还能打出如何表现，偏偏勒布朗就是那个例外，他不管不顾直接三分出手，皮球刷网而过，热火队领先3分！</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">那场球赢下来之后，骑士队3-1领先，最终4-1淘汰雷霆队夺冠，勒布朗职业生涯第一次站上NBA的最高领奖台，开启了他的王者之路。时间回到现在，距离那一天已经是3年过去了，勒布朗变得更加强大，身体却更加容易疲劳，可这些，都无法掩盖他是这个星球上最强大球员的事实。</p><p style=\"padding: 0px; margin-top: 26px; margin-bottom: 26px; text-indent: 2em;\">此役过后，骑士队大比分2-1领先占据优势，如果骑士队最终战胜了<a href=\"http://sports.163.com/keywords/5/c/52c758eb/1.html\" title=\"勇士\" target=\"_blank\" style=\"color: rgb(15, 107, 153);\">勇士</a>队夺得总冠军，那么勒布朗在这个联盟中的统治地位，将不会再有人质疑。</p><p><br/></p>',`hot`='1',`editor`='admin',`sort`='100',`from`='',`face200`='Upload/news/201506/face200557864c156e32.jpg',`face80`='Upload/news/201506/face80557864c156e32.jpg' WHERE `id` = 1 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+
+[ 2015-06-11T00:27:24+08:00 ] ::1 /xingkong/Admin/News/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+
+[ 2015-06-11T15:40:31+08:00 ] ::1 /xingkong/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001323s ]
+
+[ 2015-06-11T15:40:42+08:00 ] ::1 /xingkong/index.php/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2015-06-11T15:40:53+08:00 ] ::1 /xingkong/index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+
+[ 2015-06-11T15:40:53+08:00 ] ::1 /xingkong/Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2015-06-11T15:40:57+08:00 ] ::1 /xingkong/Admin/Login/handle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `cns_manger` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`login`,`password`,`status` FROM `cns_manger` WHERE `login` = 'cns' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `cns_manger` SET `last_login_time`='1434008457',`last_login_ip`='0' WHERE `id` = 1 [ RunTime:0.0076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2015-06-11T15:40:57+08:00 ] ::1 /xingkong/index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: titleL2 /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2015-06-11T15:41:01+08:00 ] ::1 /xingkong/Admin/Theater/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `cns_city` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name` FROM `cns_city` WHERE ( status=1 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-06-11T15:41:02+08:00 ] ::1 /xingkong/Admin/Theater/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `cns_theater` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `cns_city` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name` FROM `cns_city` WHERE ( status=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_theater` WHERE `city_id` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_theater` WHERE `city_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_theater` WHERE `city_id` = 3 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_theater` WHERE `city_id` = 4 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_theater` WHERE `city_id` = 5 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_theater` WHERE `city_id` = 6 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_theater` WHERE `city_id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cns_theater`  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `cns_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002066s ]
+
+[ 2015-06-11T15:41:09+08:00 ] ::1 /xingkong/Admin/Movie/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2015-06-11T15:41:10+08:00 ] ::1 /xingkong/Admin/Movie/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000675s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001571s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2015-06-11T15:41:10+08:00 ] ::1 /xingkong/Admin/Movie/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001529s ]
+
+[ 2015-06-11T15:41:12+08:00 ] ::1 /xingkong/Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cns_news` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`desc`,`create_time`,`editor`,`face200`,`cate_id` FROM `cns_news` WHERE `status` = 1 ORDER BY sort LIMIT 0,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2015-06-11T15:41:18+08:00 ] ::1 /xingkong/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE `status` = 1 AND `type` = 3  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cns_article` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`desc`,`create_time`,`editor`,`face200`,`cate_id` FROM `cns_article` WHERE `status` = 1 ORDER BY sort LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2015-06-11T15:41:22+08:00 ] ::1 /xingkong/Admin/AdManage/index/pos/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `cns_ad` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cns_ad` WHERE `pos` = 2 ORDER BY sort asc, id desc  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2015-06-11T15:41:29+08:00 ] ::1 /xingkong/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2015-06-11T15:41:30+08:00 ] ::1 /xingkong/Admin/Article/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002404s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE `status` = 1 AND `type` = 3  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cns_article` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`desc`,`create_time`,`editor`,`face200`,`cate_id` FROM `cns_article` WHERE `status` = 1 ORDER BY sort LIMIT 0,15   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2015-06-11T15:41:32+08:00 ] ::1 /xingkong/Admin/Kanwu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `cns_kanwu` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_kanwu` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `face240`,`add_time`,`number`,`id` FROM `cns_kanwu` ORDER BY id desc LIMIT 0,16   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: cate_id /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Admin/50829d0d72db55148b609e786307606f.php 第 434 行.
+NOTIC: [8] Undefined index: cate_id /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Admin/50829d0d72db55148b609e786307606f.php 第 434 行.
+NOTIC: [8] Undefined index: cate_id /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Admin/50829d0d72db55148b609e786307606f.php 第 434 行.
+NOTIC: [8] Undefined index: cate_id /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Admin/50829d0d72db55148b609e786307606f.php 第 434 行.
+NOTIC: [8] Undefined index: cate_id /Applications/MAMP/htdocs/xingkong/Application/Runtime/Cache/Admin/50829d0d72db55148b609e786307606f.php 第 434 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-06-11T15:41:42+08:00 ] ::1 /xingkong/Admin/Movie/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2015-06-11T15:41:47+08:00 ] ::1 /xingkong/Admin/Movie/index/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 15,15   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2015-06-11T15:41:49+08:00 ] ::1 /xingkong/Admin/Movie/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-06-11T15:41:51+08:00 ] ::1 /xingkong/Admin/Movie/index/cid/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `cns_movie` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `cns_category` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name` FROM `cns_category` WHERE ( status=1 and type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cns_movie` WHERE `cate_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name`,`cate_id`,`id`,`face40`,`intro` FROM `cns_movie` WHERE `cate_id` = 6 ORDER BY sort asc, id desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `cns_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+

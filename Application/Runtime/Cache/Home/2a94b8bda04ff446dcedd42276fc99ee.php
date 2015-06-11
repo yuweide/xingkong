@@ -103,14 +103,14 @@
        
         <div class="all_1l_2l"><img src="/xingkong/<?php echo ($hot["face200"]); ?>" height="95" width="139"></div>
         <div class="all_1l_2r">
-          <h3><a href="<?php echo U('News/detail', ['id' => $hot['id']]);?>"><?php echo (mb_substr($hot["title"], 0, 6, 'UTF-8')); ?></a></h3>
-          <p><?php echo ($hot["desc"]); ?></p>
+          <h3><a href="<?php echo U('News/detail', ['id' => $hot['id']]);?>"><?php echo (mb_substr($hot["title"], 0, 17, 'UTF-8')); ?></a></h3>
+          <p><?php echo (mb_substr($hot["desc"], 0, 70, 'UTF-8')); ?>...</p>
         </div>
         <div class="clear"></div>
       </div>
       <div class="all_1l_3">
         <ul>
-          <?php if(is_array($hots)): foreach($hots as $key=>$v): ?><li><span><?php echo (date("m-d", $v["create_time"])); ?></span><a href="<?php echo U('News/detail', ['id' => $v['id']]);?>"><?php echo (mb_substr($hot["title"], 0, 20, 'UTF-8')); ?>...</a></li><?php endforeach; endif; ?>
+          <?php if(is_array($hots)): foreach($hots as $key=>$v): ?><li><span><?php echo (date("m-d", $v["create_time"])); ?></span><a href="<?php echo U('News/detail', ['id' => $v['id']]);?>"><?php echo (mb_substr($v["title"], 0, 20, 'UTF-8')); ?>...</a></li><?php endforeach; endif; ?>
         </ul>
       </div>
     </div>
@@ -176,10 +176,10 @@
         <ul>
           <li><img src="/xingkong/Public/Home/images/73.png" width="88" height="86" /></li>
           <li><img src="/xingkong/Public/Home/images/74.png" width="88" height="86" /></li>
-          <li><img src="/xingkong/Public/Home/images/75.png" width="88" height="86" /></li>
-          <li><img src="/xingkong/Public/Home/images/76.png" width="88" height="86" /></li>
-          <li><img src="/xingkong/Public/Home/images/77.png" width="88" height="86" /></li>
-          <li><img src="/xingkong/Public/Home//xingkong/Public/Home/images/78.png" width="88" height="86" /></li>
+          <li><a href="<?php echo U('Interaction/exchange');?>"><img src="/xingkong/Public/Home/images/75.png" width="88" height="86" /></a></li>
+          <li><a href="<?php echo U('Theater/index');?>"><img src="/xingkong/Public/Home/images/76.png" width="88" height="86" /></a></li>
+          <li><a href="<?php echo U('Movie/index');?>"><img src="/xingkong/Public/Home/images/77.png" width="88" height="86" /></a></li>
+          <li><a href="<?php echo U('Help/index');?>"><img src="/xingkong/Public/Home/images/78.png" width="88" height="86" /></a></li>
         </ul>
       </div>
       <div class="all_3r_2"> 

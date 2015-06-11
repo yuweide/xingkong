@@ -27,7 +27,7 @@
     <div class="all_1l">
       <div class="all_1l_l">
         <div class="all_1l_ll"><strong>电视电影</strong>TV＆MOVIE</div>
-        <div class="all_1l_lr">MORE+</div>
+        <div class="all_1l_lr"><a href="{:U('article', ['cid' => 10])}">MORE+</a></div>
         <div class="clear"></div>
       </div>
       <div class="all_1l_2">
@@ -75,9 +75,10 @@
   <div class="all_2">
     <div class="all_21">
       <div class="all_21_l "><strong>娱乐时尚</strong>FASHION</div>
-      <div class="all_21_r ">MORE+</div>
+      <div class="all_21_r "><a href="{:U('article', ['cid' => 11])}">MORE+</a></div>
       <div class="clear"></div>
     </div>
+  </div>
     <div class="all_22">
     <ul>
         <foreach name="ylss" item="v">
@@ -90,39 +91,41 @@
         </foreach>
   </div>
   
-  <DIV class="all_3">
-  <div class="all_21">
-      <div class="all_21_l all_21_la"><strong>健康</strong>HEALTHY</div>
-      <div class="all_21_r all_21_ra">MORE+</div>
-      <div class="clear"></div>
+  <div class="all_3">
+    <div class="all_21">
+        <div class="all_21_l all_21_la"><strong>健康</strong>HEALTHY</div>
+        <div class="all_21_r all_21_ra"><a href="{:U('article', ['cid' => 10])}">MORE+</a></div>
+        <div class="clear"></div>
     </div>
-    
+      
     <div class="all_22">
-    <ul>
-    <li>
-      <img src="__PUBLIC__/Home/Images/health.jpg" width="258" height="341" />
-    </li>
-    <foreach name="jk" item="v">
-      <li> 
-        <a href="{:U('Kanwu/detail', ['id' => $v['id']])}">
-          <img src="__ROOT__/{$v.face255}" width="255" height="256" />
-          <p>
-            <strong>{$v.title|mb_substr=###, 0, 14, 'UTF-8'}</strong>
-          </p>
-          <p>
-            {$v.desc|mb_substr=###, 0, 40, 'UTF-8'}
-          </p>
-        </a>
-      </li>
-    </foreach>
-
-    </ul></div>
-    </DIV><DIV class="all_3">
-  <div class="all_21">
-      <div class="all_21_l all_21_la"><strong>美食</strong>FOOD</div>
-      <div class="all_21_r all_21_ra">MORE+</div>
-      <div class="clear"></div>
+      <ul>
+        <li>
+          <img src="__PUBLIC__/Home/Images/health.jpg" width="258" height="341" />
+        </li>
+        <foreach name="jk" item="v">
+          <li> 
+            <a href="{:U('Kanwu/detail', ['id' => $v['id']])}">
+              <img src="__ROOT__/{$v.face255}" width="255" height="256" />
+              <p>
+                <strong>{$v.title|mb_substr=###, 0, 14, 'UTF-8'}</strong>
+              </p>
+              <p>
+                {$v.desc|mb_substr=###, 0, 40, 'UTF-8'}
+              </p>
+            </a>
+          </li>
+        </foreach>
+      </ul>
     </div>
+  </div>
+  <div class="all_3">
+  
+  <div class="all_21">
+    <div class="all_21_l all_21_la"><strong>美食</strong>FOOD</div>
+    <div class="all_21_r all_21_ra"><a href="{:U('article', ['cid' => 10])}">MORE+</a></div>
+    <div class="clear"></div>
+  </div>
     
     
     <div class="all_22">
@@ -141,11 +144,9 @@
             </a>
           </li>
         </foreach>
-   
-     
       </ul>
     </div>
-    </DIV>
+    </div>
   <div class="clear"></div>
 </div>
 

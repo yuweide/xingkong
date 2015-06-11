@@ -55,7 +55,7 @@
         </a></li>
       <li><a <?php if((strtolower(CONTROLLER_NAME)) == "kanwu"): ?>class="active"<?php endif; ?> href="<?php echo U('kanwu/index');?>">
         <p><img src="/xingkong/Public/Home/Images/8.png" width="49" height="32" /></p>
-        <p>广播报</p>
+        <p>广电报</p>
         </a></li>
       <li><a <?php if((strtolower(CONTROLLER_NAME)) == "about"): ?>class="active"<?php endif; ?> href="<?php echo U('About/index');?>">
         <p><img src="/xingkong/Public/Home/Images/9.png" width="33" height="35" /></p>

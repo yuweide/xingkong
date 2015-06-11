@@ -47,9 +47,29 @@ class KanwuController extends BaseController
     }
 
     //文章列表
-    public function articleList() 
+    public function article() 
     {
 
+        $this->titleL1 = "文章列表";
+        $cate = M('Category')->where('type = 3 and status = 1')->field('id,name')->select();
+        $cid  = I('cid', 0, 'intval');
+        $cid  = $cid ? $cid : $cate[0]['id']; 
+        $this->cid  = $cid;
+        $this->cate = $cate;
+        
+        $model = M('Article');
+        $map   = array(
+            'status'  => 1,
+            'cate_id' => $cid
+        );
+        $count = $model->where($map)->count();
+        $Page  = new \Think\Page($count,C('PAGE_SIZE'));
+        $Page->setConfig('prev','上一页');
+        $Page->setConfig('next','下一页');
+        $show  = $Page->show();
+        $list  = $model->where($map)->order('sort, id desc')->limit($Page->firstRow.','.$Page->listRows)->field('id, title, desc, create_time, face200')->select();
+        $this->assign('list',$list);
+        $this->assign('page',$show);
         $this->display();
     }
 

@@ -86,7 +86,7 @@
     <div class="all_1l">
       <div class="all_1l_l">
         <div class="all_1l_ll"><strong>电视电影</strong>TV＆MOVIE</div>
-        <div class="all_1l_lr">MORE+</div>
+        <div class="all_1l_lr"><a href="<?php echo U('article', ['cid' => 10]);?>">MORE+</a></div>
         <div class="clear"></div>
       </div>
       <div class="all_1l_2">
@@ -132,9 +132,10 @@
   <div class="all_2">
     <div class="all_21">
       <div class="all_21_l "><strong>娱乐时尚</strong>FASHION</div>
-      <div class="all_21_r ">MORE+</div>
+      <div class="all_21_r "><a href="<?php echo U('article', ['cid' => 11]);?>">MORE+</a></div>
       <div class="clear"></div>
     </div>
+  </div>
     <div class="all_22">
     <ul>
         <?php if(is_array($ylss)): foreach($ylss as $key=>$v): ?><li> 
@@ -145,37 +146,39 @@
           </li><?php endforeach; endif; ?>
   </div>
   
-  <DIV class="all_3">
-  <div class="all_21">
-      <div class="all_21_l all_21_la"><strong>健康</strong>HEALTHY</div>
-      <div class="all_21_r all_21_ra">MORE+</div>
-      <div class="clear"></div>
+  <div class="all_3">
+    <div class="all_21">
+        <div class="all_21_l all_21_la"><strong>健康</strong>HEALTHY</div>
+        <div class="all_21_r all_21_ra"><a href="<?php echo U('article', ['cid' => 10]);?>">MORE+</a></div>
+        <div class="clear"></div>
     </div>
-    
+      
     <div class="all_22">
-    <ul>
-    <li>
-      <img src="/xingkong/Public/Home/Images/health.jpg" width="258" height="341" />
-    </li>
-    <?php if(is_array($jk)): foreach($jk as $key=>$v): ?><li> 
-        <a href="<?php echo U('Kanwu/detail', ['id' => $v['id']]);?>">
-          <img src="/xingkong/<?php echo ($v["face255"]); ?>" width="255" height="256" />
-          <p>
-            <strong><?php echo (mb_substr($v["title"], 0, 14, 'UTF-8')); ?></strong>
-          </p>
-          <p>
-            <?php echo (mb_substr($v["desc"], 0, 40, 'UTF-8')); ?>
-          </p>
-        </a>
-      </li><?php endforeach; endif; ?>
-
-    </ul></div>
-    </DIV><DIV class="all_3">
-  <div class="all_21">
-      <div class="all_21_l all_21_la"><strong>美食</strong>FOOD</div>
-      <div class="all_21_r all_21_ra">MORE+</div>
-      <div class="clear"></div>
+      <ul>
+        <li>
+          <img src="/xingkong/Public/Home/Images/health.jpg" width="258" height="341" />
+        </li>
+        <?php if(is_array($jk)): foreach($jk as $key=>$v): ?><li> 
+            <a href="<?php echo U('Kanwu/detail', ['id' => $v['id']]);?>">
+              <img src="/xingkong/<?php echo ($v["face255"]); ?>" width="255" height="256" />
+              <p>
+                <strong><?php echo (mb_substr($v["title"], 0, 14, 'UTF-8')); ?></strong>
+              </p>
+              <p>
+                <?php echo (mb_substr($v["desc"], 0, 40, 'UTF-8')); ?>
+              </p>
+            </a>
+          </li><?php endforeach; endif; ?>
+      </ul>
     </div>
+  </div>
+  <div class="all_3">
+  
+  <div class="all_21">
+    <div class="all_21_l all_21_la"><strong>美食</strong>FOOD</div>
+    <div class="all_21_r all_21_ra"><a href="<?php echo U('article', ['cid' => 10]);?>">MORE+</a></div>
+    <div class="clear"></div>
+  </div>
     
     
     <div class="all_22">
@@ -192,11 +195,9 @@
               </p>
             </a>
           </li><?php endforeach; endif; ?>
-   
-     
       </ul>
     </div>
-    </DIV>
+    </div>
   <div class="clear"></div>
 </div>
 

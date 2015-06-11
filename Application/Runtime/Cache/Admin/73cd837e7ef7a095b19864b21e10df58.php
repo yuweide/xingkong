@@ -453,7 +453,7 @@
                                   <div class="col-sm-2">
                                   	<img id="no-image" src="/xingkong/Public/Default/images/no_image.jpg" >
                                   </div>
-                                  <div class="col-sm-8" style="margin-top:60px;">
+                                  <div class="col-sm-8" style="margin-top:20px;">
                                       <input type="file" name="face" id="upload" />
                                       <p class="help-block no-margin">格式：jpg、jpeg、gif、png 尺寸：210*115/px</p>
                                   </div>
